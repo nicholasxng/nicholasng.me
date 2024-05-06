@@ -1,11 +1,11 @@
 ---
 date: 2021-05-01T00:00:00+01:00
 draft: false
-title: "Chief Coyote - Acme"
-jobTitle: "Chief Coyote"
-company: "Acme"
-location: "warner bros. burbank"
-duration: "2021-present"
+title: "staff technical program manager"
+jobTitle: "staff technical program manager"
+company: "box"
+location: "redwood city ca"
+duration: "2018-2019"
 ---
 ### Moved to Denmark, joined an European Unicorn 🦄
 
