@@ -23,34 +23,34 @@ showcase:
     - icon: "github"
       URL: "https://github.com/zetxek"
 
-    - icon: "twitter"
-      URL: "https://twitter.com/zetxek"
+    # - icon: "twitter"
+    #   URL: "https://twitter.com/zetxek"
 
-    - icon: "dribbble"
-      URL: "#"
+    # - icon: "dribbble"
+    #   URL: "#"
 
-    - icon: "behance"
-      URL: "#"
+    # - icon: "behance"
+    #   URL: "#"
 
-    - icon: "youtube"
-      URL: "#"
+    # - icon: "youtube"
+    #   URL: "#"
 
-    - icon: "instagram"
-      URL: "https://www.instagram.com/zetxek/"
+    # - icon: "instagram"
+    #   URL: "https://www.instagram.com/zetxek/"
 
-    - icon: "facebook"
-      URL: "https://www.facebook.com/zetxek/"
+    # - icon: "facebook"
+    #   URL: "https://www.facebook.com/zetxek/"
 
-    - icon: "codepen"
-      URL: "#"
+    # - icon: "codepen"
+    #   URL: "#"
 
-    - icon: "yelp"
-      URL: "https://www.yelp.com/"
+    # - icon: "yelp"
+    #   URL: "https://www.yelp.com/"
 
 # about
 about:
   enable: true
-  title: "Who am I?"
+  title: "who am i"
   content: >
     <p class="lead">
       Here you can add some information about you. A small excerpt that describes 
@@ -74,15 +74,15 @@ about:
 # education
 education:
   enable: true
-  title: "Education"
+  title: "education"
   items:
-    - university: "University of Life - imagechange"
-      year: "2012-2017"
-      degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
+    - university: "university of california berkeley 💙🐻💛 "
+      year: ""
+      degree: "bachelor of arts - economics"
 
-    - university: "High School of Hard Knocks"
-      year: "2009-2012"
-      degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
+    # - university: "High School of Hard Knocks"
+    #   year: "2009-2012"
+    #   degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
 
 # experience
 experience:
@@ -219,13 +219,13 @@ contact:
     message: "Type Your Message Here"
   phone:
     title: "Phone Number"
-    number: "+555 (11) 123 44 55"
+    number: "+1 510 333 6355"
   email:
     title: "Email"
-    email: '<a href="mailto:mail@example.com">mail@example.com</a>'
-  address:
-    title: "Address"
-    address: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
+    email: '<a href="mailto:nicholas@nicholasng.me">nicholas.at.nicholasng.dot.me</a>'
+  # address:
+  #   title: "Address"
+  #   address: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
