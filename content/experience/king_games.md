@@ -7,18 +7,16 @@ company: "king games"
 location: "san francisco ca"
 duration: "2021-present"
 ---
-### Moved to Denmark, joined an European Unicorn 🦄
+### candy crushing it
 
-After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.
+At King Games, known for its hit title Candy Crush, I had the unique opportunity to spearhead the launch of the company's inaugural loyalty program, an ambitious project aimed at enhancing player engagement and retention. My role involved directing the technical launch of the loyalty site, where I led an international team that encompassed expertise from various domains including Candy Crush operations, loyalty programs, UX/UI design, product management, and engineering. Our collective efforts culminated in the introduction of a comprehensive suite of features such as a bonus system, a digital storefront, exclusive content offerings, and advanced dashboarding capabilities. This multifaceted approach was designed to create a rewarding and engaging player experience, significantly elevating user interaction with the game.
 
-At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective [spirit of the company when finding new ways of working](https://www.sumup.com/en-us/wtf-sumup-organisation/).
+The launch of the loyalty program was a resounding success, surpassing initial pilot projections substantially. Through strategic marketing initiatives and continuous enhancements to the program, we achieved remarkable results including $400K in monthly bookings, which represented a 10% increase. Furthermore, the program attracted 70K unique visitors, with a notable 25% return rate, and facilitated 63K reward redemptions, marking a 20% conversion rate. These metrics not only underscored the program's effectiveness but also highlighted its potential to drive significant financial and engagement gains.
 
-Later, I got promoted to Director of Engineering, overseeing the engineering department of the Invoices Tribe (and its two products, [SumUp Invoices](https://www.sumup.com/en-gb/invoices/) & Accounting). As part of the Tribe leadership, I worked on aligning technology and product to ensure a solid foundation for quick iterations, and maximising merchants' value and developer experience (happy teams = happy product = happy customers!).
+To sustain and build upon this success, I developed a detailed program dashboard that allowed for meticulous monitoring of participant KPIs and program OKRs. This tool was pivotal in guiding adaptive roadmap strategies, which led to a consistent 10% month-over-month increase in key engagement metrics such as Net Promoter Score (NPS), site visits, and time spent on site. This strategic approach ensured that we remained agile, responsive to player feedback, and ahead of market trends, thereby cementing the loyalty program's role as a cornerstone of King Games' player engagement strategy.
 
-Afterwards, I got another job change, transitioning to be the tribe lead for the Invoices & Accounting team. This role involves P&L responsibility, as well as accountability on financial results and product evolution. 
 
-The team size is around 30 FTE - organized in 4 squads + QA, each with an Engineering Manager. We provide mobile app services (from the context of the SumUp SuperApp) as well as web experience.
 
-Additionally, I expanded my scope on Engineering, by driving the global Incident Response process. Without direct reports, the responsibility includes to lead the implementation of the processes and tools. The role involves intense collaboration with other functions (such as Risk, Compliance and Operations) to implement the process in a holistic, customer-centric manner. 
 
-After being focused on growth, aligned with the global economical context in 2023 there was a strong company-wide pivot to profitability. This resulted on achieving a [funding round of €285 million in december](https://www.cnbc.com/2023/12/11/sumup-defies-fintech-funding-slump-with-307-million-fundraise.html), fueling the growth ambition (with a economically sustainable approach).
+
+
