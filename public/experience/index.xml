@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Experiences on </title>
-    <link>http://localhost:1313/experience/</link>
+    <link>http://localhost:53040/experience/</link>
     <description>Recent content in Experiences on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 May 2021 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chief Coyote - Acme</title>
-      <link>http://localhost:1313/experience/box/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/box/</guid>
-      <description>Moved to Denmark, joined an European Unicorn 🦄 After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.&#xA;At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective spirit of the company when finding new ways of working.</description>
-    </item>
+    <atom:link href="http://localhost:53040/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rally health</title>
-      <link>http://localhost:1313/experience/rally_health/</link>
+      <link>http://localhost:53040/experience/rally_health/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/rally_health/</guid>
+      <guid>http://localhost:53040/experience/rally_health/</guid>
+      <description>Moved to Denmark, joined an European Unicorn 🦄 lorem ipsum</description>
+    </item>
+    <item>
+      <title>staff technical program manager</title>
+      <link>http://localhost:53040/experience/apple/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
+      <guid>http://localhost:53040/experience/apple/</guid>
+      <description> As a Program Manager at Apple, working within the worldwide sales unit, I navigated the complex challenges of master data management, significantly enhancing operational efficiencies and cross-functional collaboration. My tenure was marked by a strategic overhaul of sales processes and product management alignment, which not only expedited time-to-market by 20% but also bolstered sales efficiency by an impressive 15%. By deploying innovative data ingestion and management features, I was instrumental in refining the integration of sales strategies with cutting-edge technological enhancements.</description>
+    </item>
+    <item>
+      <title>staff technical program manager</title>
+      <link>http://localhost:53040/experience/box/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
+      <guid>http://localhost:53040/experience/box/</guid>
       <description>Moved to Denmark, joined an European Unicorn 🦄 After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.&#xA;At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective spirit of the company when finding new ways of working.</description>
     </item>
     <item>
       <title>staff technical program manager</title>
-      <link>http://localhost:1313/experience/apple/</link>
+      <link>http://localhost:53040/experience/king_games/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/apple/</guid>
-      <description>Moved to Denmark, joined an European Unicorn 🦄 After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.&#xA;At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective spirit of the company when finding new ways of working.</description>
-    </item>
-    <item>
-      <title>staff technical program manager</title>
-      <link>http://localhost:1313/experience/king_games/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/king_games/</guid>
-      <description>Moved to Denmark, joined an European Unicorn 🦄 After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.&#xA;At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective spirit of the company when finding new ways of working.</description>
+      <guid>http://localhost:53040/experience/king_games/</guid>
+      <description>candy crushing it At King Games, known for its hit title Candy Crush, I had the unique opportunity to spearhead the launch of the company&amp;rsquo;s inaugural loyalty program, an ambitious project aimed at enhancing player engagement and retention. My role involved directing the technical launch of the loyalty site, where I led an international team that encompassed expertise from various domains including Candy Crush operations, loyalty programs, UX/UI design, product management, and engineering.</description>
     </item>
   </channel>
 </rss>
