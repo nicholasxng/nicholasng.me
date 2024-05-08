@@ -1,27 +1,28 @@
 # showcase
+# change this file for live changes! 
 showcase:
   enable: true
   title: "hello, i'm nicholas"
   subtitle: "jack of all trades, master of none"
   description: >
-    This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>You can download this theme from <a target='_blank' href='https://github.com/zetxek/adritian-free-hugo-theme'>github</a>, and see it live <a target='_blank' href="https://zetxek.github.io/adritian-demo/">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
+    This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>Messing around on GH here  <a target='_blank' href='https://github.com/nicholasng-7642/'>github</a>, and see it live <a target='_blank' href="https://zetxek.github.io/adritian-demo/">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
   image:
-    x: "images/showcase/memoji_macbook.png"
-    _2x: "images/showcase/memoji_macbook.png"
+    x: "images/showcase/showcase1.png"
+    _2x: "images/showcase/showcase1.png"
   imageMobile:
-    x: "images/showcase/memoji_macbook.png"
+    x: "images/showcase/showcase1.png"
 
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://www.adrianmoreno.info/"
+    URL: "https://www.nicholasng.me/"
 
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/in/adrianmoreno/"
+      URL: "https://www.linkedin.com/in/nicholasngtpm"
 
     - icon: "github"
-      URL: "https://github.com/zetxek"
+      URL: "https://github.com/nicholasng-7642"
 
     # - icon: "twitter"
     #   URL: "https://twitter.com/zetxek"
@@ -66,10 +67,10 @@ about:
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
-    URL: "https://www.linkedin.com/in/adrianmoreno/"
+    URL: "https://www.linkedin.com/in/nicholasngtpm"
   image:
-    x: "images/who-am-i/image.png"
-    _2x: "images/who-am-i/image.png"
+    x: "images/who-am-i/memoji_macbook.png"
+    _2x: "images/who-am-i/memoji_macbook.png"
 
 # education
 education:
@@ -87,7 +88,7 @@ education:
 # experience
 experience:
   enable: true
-  title: "Experience"
+  title: "experience"
   description: >
     Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives.
   button:

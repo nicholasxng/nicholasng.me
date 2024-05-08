@@ -69,7 +69,7 @@ theme = "adritian-free-hugo-theme"
     text2 = "ng"
 
   [params.footer]
-      copyright = "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+      copyright = "© lorem ipsum"
       [params.footer.radity_logo]
         x = "img/general/design-and-code-radity.png"
         _2x = "img/general/design-and-code-radity@2x.png"
