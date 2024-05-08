@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:64856/</link>
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 May 2021 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64856/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rally health</title>
-      <link>http://localhost:1313/experience/rally_health/</link>
+      <link>http://localhost:64856/experience/rally_health/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/rally_health/</guid>
+      <guid>http://localhost:64856/experience/rally_health/</guid>
       <description>Moved to Denmark, joined an European Unicorn 🦄 lorem ipsum</description>
     </item>
     <item>
       <title>staff technical program manager</title>
-      <link>http://localhost:1313/experience/apple/</link>
+      <link>http://localhost:64856/experience/apple/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/apple/</guid>
+      <guid>http://localhost:64856/experience/apple/</guid>
       <description>imagebranch As a Program Manager at Apple, working within the worldwide sales unit, I navigated the complex challenges of master data management, significantly enhancing operational efficiencies and cross-functional collaboration. My tenure was marked by a strategic overhaul of sales processes and product management alignment, which not only expedited time-to-market by 20% but also bolstered sales efficiency by an impressive 15%. By deploying innovative data ingestion and management features, I was instrumental in refining the integration of sales strategies with cutting-edge technological enhancements.</description>
     </item>
     <item>
       <title>staff technical program manager</title>
-      <link>http://localhost:1313/experience/box/</link>
+      <link>http://localhost:64856/experience/box/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/box/</guid>
+      <guid>http://localhost:64856/experience/box/</guid>
       <description>Moved to Denmark, joined an European Unicorn 🦄 After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.&#xA;At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective spirit of the company when finding new ways of working.</description>
     </item>
     <item>
       <title>staff technical program manager</title>
-      <link>http://localhost:1313/experience/king_games/</link>
+      <link>http://localhost:64856/experience/king_games/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/experience/king_games/</guid>
+      <guid>http://localhost:64856/experience/king_games/</guid>
       <description>Moved to Denmark, joined an European Unicorn 🦄 After relocating from Amsterdam to Copenhagen - I joined SumUp to work in the danish headquarters as an Engineering Manager for the Accounting Squad, in the Merchant Growth Tribe. The team I joined had been part of a previous acquisition of SumUp (Debitoor): merging cultures and integrating into the overall company was a big challenge.&#xA;At SumUp I got hands-on with a more complex organizational setup and map, with a tribalized setup; and highly enjoyed the reflective spirit of the company when finding new ways of working.</description>
     </item>
   </channel>
