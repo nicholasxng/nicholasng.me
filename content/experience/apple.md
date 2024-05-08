@@ -7,7 +7,7 @@ company: "apple"
 location: "cupertino ca"
 duration: "2022-present"
 ---
-### 
+### imagebranch
 
 As a Program Manager at Apple, working within the worldwide sales unit, I navigated the complex challenges of master data management, significantly enhancing operational efficiencies and cross-functional collaboration. My tenure was marked by a strategic overhaul of sales processes and product management alignment, which not only expedited time-to-market by 20% but also bolstered sales efficiency by an impressive 15%. By deploying innovative data ingestion and management features, I was instrumental in refining the integration of sales strategies with cutting-edge technological enhancements.
 
