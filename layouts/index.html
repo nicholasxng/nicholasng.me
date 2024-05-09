@@ -1,22 +1,16 @@
 <!-- inject:../components/baseHead/baseHeadStart.html -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     {{ partial "head.html" . }}
-
     {{ partial "head_custom.html" . }}
-
 </head>
 
 <body class="{{ if .IsHome }}home{{ end }}">
-
 	{{ partial "header.html" . }}
+
+    {{ partial "experience.html" . }} <!-- Insert the experience partial here -->
 
 	{{ range .Site.Params.sections }}
 	{{ partial . $ }}
