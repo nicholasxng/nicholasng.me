@@ -7,10 +7,10 @@ showcase:
   description: >
     This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>Messing around on GH here  <a target='_blank' href='https://github.com/nicholasng-7642/'>github</a>, and see it live <a target='_blank' href="https://zetxek.github.io/adritian-demo/">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
   image:
-    x: "images/showcase/showcase1.png"
-    _2x: "images/showcase/showcase1.png"
+    x: "images/showcase/memoji_macbook.png"
+    _2x: "images/showcase/memoji_macbook.png"
   imageMobile:
-    x: "images/showcase/showcase1.png"
+    x: "images/showcase/memoji_macbook.png"
 
   button:
     icon: "icon-mail-fill"
@@ -54,23 +54,21 @@ about:
   title: "who am i"
   content: >
     <p class="lead">
-      Here you can add some information about you. A small excerpt that describes 
-      your experience, for example.   
-      </p>
-      <p class="lead">
-      You explain something about your academic/study background, as well as your
-      preferred areas of work. Think of this area as context-setting for the experience
-      that you will describe below. Why did you change jobs? What drove you to take a 
-      new gig? Even if you are not looking for a job, it's a good way to hint about
-      what kind of projects you are interested in.
+        I am a technologist with a rich blend of technical expertise and strategic acumen, dedicated to leveraging technology to solve real-world challenges. Known for my dynamic leadership and hands-on approach, I excel in enhancing user engagement and optimizing operations through innovative solutions. As a sociable and approachable leader, my passion for fast learning and curiosity fuels my ability to effectively inspire and collaborate with my teams.
     </p>
+     <p class="lead">
+        My career features a diverse mix of technical and managerial experiences, with a strong focus on technological advancements. I bring a sharp business insight and product vision to tech teams, a skill sharpened through initiating and scaling projects in various sectors. My adaptability and eagerness to embrace new technologies are key to enhancing user experiences, driven by a strong commitment to my team and clients.
+     </p>
+     <p class="lead">
+         As a specialized generalist, I navigate seamlessly across different tech domains, aiming to forge a comprehensive understanding of successful tech product creation. This involves mastering various languages and frameworks, focusing on both backend and client-side enhancements. My career is a continuous pursuit of a holistic vision in tech development, characterized by inclusive, results-oriented leadership.
+     </p>
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
     URL: "https://www.linkedin.com/in/nicholasngtpm"
   image:
-    x: "images/who-am-i/memoji_macbook.png"
-    _2x: "images/who-am-i/memoji_macbook.png"
+    x: "images/who-am-i/showcase1.png"
+    _2x: "images/who-am-i/showcase1.png"
 
 # education
 education:

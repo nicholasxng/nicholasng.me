@@ -6,6 +6,7 @@ jobTitle: "staff technical program manager"
 company: "apple"
 location: "cupertino ca"
 duration: "2022-present"
+weight: 4
 ---
 ### Revolutionizing Data Management at Apple: Streamlining Sales and Enhancing Global Collaboration
 

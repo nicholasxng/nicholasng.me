@@ -6,6 +6,7 @@ jobTitle: "staff technical program manager"
 company: "king games"
 location: "san francisco ca"
 duration: "2021-2022"
+weight: 3
 ---
 ### King Games Levels Up: Leading the Charge in Player Loyalty and Engagement
 

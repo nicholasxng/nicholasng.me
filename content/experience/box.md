@@ -6,6 +6,7 @@ jobTitle: "staff technical program manager"
 company: "box"
 location: "redwood city ca"
 duration: "2018-2019"
+weight: 1
 ---
 ### Revamping Infrastructure: Pioneering Box.com's Hardware Engineering Revolution
 

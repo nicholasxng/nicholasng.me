@@ -6,6 +6,7 @@ jobTitle: "lead technical program manager"
 company: "rally health"
 location: "san francisco ca"
 duration: "2019-2021"
+weight: 2
 ---
 ### Transforming Healthcare at Rally Health: Leading Through Innovation and Resilience
 
