@@ -3,9 +3,10 @@
 showcase:
   enable: true
   title: "hello, i'm nicholas"
-  subtitle: "jack of all trades, master of none"
+  subtitle: "jack of all trades; 
+  master of none"
   description: >
-    This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>Messing around on GH here  <a target='_blank' href='https://github.com/nicholasng-7642/'>github</a>, and see it live <a target='_blank' href="https://zetxek.github.io/adritian-demo/">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
+    My background is diverse, as a specialized generalist. In technology I have a wide range of experiences: from backend to mobile development or infrastructure, as well as individual contributor or leading teams. I apply the 3P's (People, Product, Process) to my work, and I am passionate about contributing to healthy teams that work in iterative improvements.
   image:
     x: "images/showcase/memoji_macbook.png"
     _2x: "images/showcase/memoji_macbook.png"
