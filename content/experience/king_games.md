@@ -7,7 +7,7 @@ company: "king games"
 location: "san francisco ca"
 duration: "2021-2022"
 ---
-### candy loyalty
+### King Games Levels Up: Leading the Charge in Player Loyalty and Engagement
 
 At King Games, known for its hit title Candy Crush, I had the unique opportunity to spearhead the launch of the company's inaugural loyalty program, an ambitious project aimed at enhancing player engagement and retention. My role involved directing the technical launch of the loyalty site, where I led an international team that encompassed expertise from various domains including Candy Crush operations, loyalty programs, UX/UI design, product management, and engineering. Our collective efforts culminated in the introduction of a comprehensive suite of features such as a bonus system, a digital storefront, exclusive content offerings, and advanced dashboarding capabilities. This multifaceted approach was designed to create a rewarding and engaging player experience, significantly elevating user interaction with the game.
 
