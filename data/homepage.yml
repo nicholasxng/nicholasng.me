@@ -23,7 +23,7 @@ showcase:
       URL: "https://www.linkedin.com/in/nicholasngtpm"
 
     - icon: "github"
-      URL: "https://github.com/nicholasng-7642"
+      URL: "https://github.com/nicholasxng"
 
     # - icon: "twitter"
     #   URL: "https://twitter.com/zetxek"
@@ -97,7 +97,7 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
-    URL: "https://nicholasng-7642.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf"
+    URL: "https://nicholasxng.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf"
 
   items:
     - title: "Sr. Title"
