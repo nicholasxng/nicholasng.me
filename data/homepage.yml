@@ -55,13 +55,13 @@ about:
   title: "who am i"
   content: >
     <p class="lead">
-        I am a technologist with a robust mix of technical skill and strategic insight, committed to using technology to address real-world challenges. Renowned for dynamic leadership and a proactive approach, I excel in boosting user engagement and streamlining operations through cutting-edge solutions. My leadership style is approachable and collaborative, driven by a passion for quick learning and innovation.
+        I am a technologist with a rich blend of technical expertise and strategic acumen, dedicated to leveraging technology to solve real-world challenges. Known for my dynamic leadership and hands-on approach, I excel in enhancing user engagement and optimizing operations through innovative solutions. As a sociable and approachable leader, my passion for fast learning and curiosity fuels my ability to effectively inspire and collaborate with my teams.
     </p>
      <p class="lead">
-          My career spans diverse technical and managerial roles, deeply rooted in tech advancements. I adeptly bridge business insights and product vision within tech teams, honed through leading various sector projects. My adaptability and drive to adopt new technologies enhance user experiences and team dynamics.
+        My career features a diverse mix of technical and managerial experiences, with a strong focus on technological advancements. I bring a sharp business insight and product vision to tech teams, a skill sharpened through initiating and scaling projects in various sectors. My adaptability and eagerness to embrace new technologies are key to enhancing user experiences, driven by a strong commitment to my team and clients.
      </p>
      <p class="lead">
-            As a versatile expert, I adeptly bridge various tech domains to craft successful products, focusing on backend and client-side improvements. My professional journey is marked by continuous learning and inclusive, effective leadership.
+         As a specialized generalist, I navigate seamlessly across different tech domains, aiming to forge a comprehensive understanding of successful tech product creation. This involves mastering various languages and frameworks, focusing on both backend and client-side enhancements. My career is a continuous pursuit of a holistic vision in tech development, characterized by inclusive, results-oriented leadership.
      </p>
   button:
     icon: "icon-smile-fill"
@@ -215,7 +215,7 @@ contact:
   form:
     action: "https://formspree.io/f/mleqvgbz" #testing formspree
     method: "POST"
-    # full_name: "Full Name"
+    full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
   phone:
