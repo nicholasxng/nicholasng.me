@@ -213,7 +213,8 @@ contact:
   enable: true
   title: "contact"
   form:
-    action: "#"
+    action: "https://formspree.io/f/mleqvgbz" #testing formspree
+    method: "POST"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
