@@ -1,7 +1,8 @@
 /* You can customize theme styles here */
 /* berkeley blue: #003262
 california gold: #FDB515 
-founder's rock: 3B7EA1*/
+founder's rock: #3B7EA1
+medalist: #FDB515*/
 .header .navbar-brand span:first-child{
     color: #3B7EA1;
 }

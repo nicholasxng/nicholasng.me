@@ -211,7 +211,7 @@ testimonial:
 # contact
 contact:
   enable: true
-  title: "Contact"
+  title: "contact"
   form:
     action: "#"
     full_name: "Full Name"
