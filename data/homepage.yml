@@ -68,7 +68,7 @@ about:
     btnText: "About Me"
     URL: "https://www.linkedin.com/in/nicholasngtpm"
   image:
-    x: "images/who-am-i/showcase1.png"
+    x: "images/who-am-i/showcase1@5x.png"
     _2x: "images/who-am-i/showcase1.png"
 
 # education

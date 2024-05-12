@@ -1016,6 +1016,7 @@ pre code {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 10px;  /* Reduced from a larger value */
 }
 .order-first {
     -webkit-box-ordinal-group: 0;
@@ -7015,7 +7016,8 @@ button.bg-dark:hover {
 }
 .mt-auto,
 .my-auto {
-    margin-top: auto !important;
+    margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+    /* margin-top: auto !important; */
 }
 .mr-auto,
 .mx-auto {
@@ -7023,7 +7025,8 @@ button.bg-dark:hover {
 }
 .mb-auto,
 .my-auto {
-    margin-bottom: auto !important;
+    margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+    /* margin-bottom: auto !important; */
 }
 .ml-auto,
 .mx-auto {
@@ -7517,7 +7520,8 @@ button.bg-dark:hover {
     }
     .mt-sm-auto,
     .my-sm-auto {
-        margin-top: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-top: auto !important; */
     }
     .mr-sm-auto,
     .mx-sm-auto {
@@ -7525,7 +7529,8 @@ button.bg-dark:hover {
     }
     .mb-sm-auto,
     .my-sm-auto {
-        margin-bottom: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-bottom: auto !important; */
     }
     .ml-sm-auto,
     .mx-sm-auto {
@@ -8003,7 +8008,8 @@ button.bg-dark:hover {
     }
     .mt-md-auto,
     .my-md-auto {
-        margin-top: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-top: auto !important; */
     }
     .mr-md-auto,
     .mx-md-auto {
@@ -8011,7 +8017,8 @@ button.bg-dark:hover {
     }
     .mb-md-auto,
     .my-md-auto {
-        margin-bottom: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-bottom: auto !important; */
     }
     .ml-md-auto,
     .mx-md-auto {
@@ -8489,7 +8496,8 @@ button.bg-dark:hover {
     }
     .mt-lg-auto,
     .my-lg-auto {
-        margin-top: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-top: auto !important; */
     }
     .mr-lg-auto,
     .mx-lg-auto {
@@ -8497,7 +8505,8 @@ button.bg-dark:hover {
     }
     .mb-lg-auto,
     .my-lg-auto {
-        margin-bottom: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-bottom: auto !important; */
     }
     .ml-lg-auto,
     .mx-lg-auto {
@@ -8975,7 +8984,8 @@ button.bg-dark:hover {
     }
     .mt-xl-auto,
     .my-xl-auto {
-        margin-top: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-top: auto !important; */
     }
     .mr-xl-auto,
     .mx-xl-auto {
@@ -8983,7 +8993,8 @@ button.bg-dark:hover {
     }
     .mb-xl-auto,
     .my-xl-auto {
-        margin-bottom: auto !important;
+        margin-bottom: 10px !important;  // or 0 if you want to remove it entirely
+        /* margin-bottom: auto !important; */
     }
     .ml-xl-auto,
     .mx-xl-auto {
@@ -9932,8 +9943,8 @@ textarea:focus {
 }
 @media (min-width: 992px) {
     .section {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .section .row.row--padded {
         margin-top: 80px;

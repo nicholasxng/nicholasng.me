@@ -17,7 +17,8 @@ html body ::selection{
 }
 
 .profile-image img{
-    margin-top: 40px;
+    margin-top: 0px;
+    /* margin-top: 40px; */
 }
 
 .rad-showcase__bg img{
