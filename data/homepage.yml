@@ -97,8 +97,8 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
-    URL: "/files/Nicholas Ng 2024.pdf"
-    # URL: "https://nicholasxng.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf" this is for the githubpages deployment
+    # URL: "/files/Nicholas Ng 2024.pdf" <- for local deployment
+    URL: "https://nicholasxng.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf" #this is for the githubpages deployment
 
   items:
     - title: "Sr. Title"
