@@ -15,7 +15,7 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://www.nicholasng.me/"
+    URL: "https://www.nicholasng.me/#contact"
 
   socialLinks:
     - icon: "linkedin"
