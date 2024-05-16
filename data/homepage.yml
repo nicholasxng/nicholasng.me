@@ -5,7 +5,7 @@ showcase:
   title: "hello, i'm nicholas"
   subtitle: "i deliver things"
   description: >
-    As a Technical Program Manager, I apply a straightforward approach: focus on People, Product, and Process. I lead teams through challenges with a clear focus on objectives, a unified strategic direction, and a commitment to iterative improvements, ensuring technical and operational excellence. My role is about more than managing—it's about driving transformative changes and achieving substantial results in the tech landscape.
+    As a Technical Program Manager, I apply a straightforward approach: focus on People, Product, and Process. I lead teams through challenges with a clear focus on objectives, a unified strategic direction, and a commitment to iterative improvements, ensuring technical and operational excellence. My role is about more than managing — it's about driving transformative changes and achieving substantial results in the tech landscape.
   image:
     x: "images/showcase/nick_delivery.png"
     _2x: "images/showcase/nick_delivery.png"
@@ -54,10 +54,10 @@ about:
   title: "this is me"
   content: >
     <p class="lead">
-        As a tech leader, I thrive on tackling complex operational challenges head-on. Whether modernizing platforms with DevOps and cloud, rolling out innovative data solutions, or launching new products, I assemble cross-functional teams to identify and resolve key constraints.
+        As a tech leader, I thrive on tackling complex operational challenges head-on. Whether modernizing platforms with DevOps and cloud, rolling out innovative data solutions, or launching new products, I assemble cross-functional teams to determine the objective, define the outcomes, and produce solutions.
     </p>
      <p class="lead">
-        We follow lean principles and automate processes to optimize architectures and accelerate cycle times. I foster an environment of continuous improvement, implementing automated testing and monitoring to drive efficiency gains. My teams are empowered to remediate technical debt and deliver high-velocity performance.
+        We follow lean principles and implement best practices to optimize architectures and accelerate cycle times. I foster an environment of continuous improvement, implementing constant team feedback and evolving processes to deliver value. My teams are empowered to resolve inefficiencies and achieve high-velocity performance.
      </p>
      <p class="lead">
         Those "a-ha" moments when we've leveled up our tech capabilities are incredibly energizing. Suddenly bottlenecks are resolved, insights are flowing, and we're fueling the business with reliable systems operating at scale. My enthusiasm lies in unlocking those performance wins and fostering an environment of acceleration. Let's amp up your technical engine together - I'll bring the passion for driving impactful change.
