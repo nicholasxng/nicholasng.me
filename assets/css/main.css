@@ -9751,7 +9751,7 @@ input[type="email"]::placeholder {
     width: calc(100% + 80px);
     margin-left: -40px;
     margin-right: -40px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .about__profile-picture img {
     min-width: 200px;
@@ -10512,7 +10512,8 @@ textarea:focus {
 }
 @media (min-width: 992px) {
     .rad-showcase .platform-links {
-        margin-top: 92px;
+        margin-top: 10px;
+        /* margin-top: 92px; */
         margin-right: -10px;
     }
 }

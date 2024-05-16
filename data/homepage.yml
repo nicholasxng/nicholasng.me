@@ -54,20 +54,23 @@ about:
   title: "this is me"
   content: >
     <p class="lead">
-        As a Technology Delivery Leader, I harness a robust blend of technical expertise and strategic insight to solve real-world challenges. Known for dynamic leadership, I enhance user engagement and optimize operations with innovative solutions. My approach is proactive, collaborative, and driven by a relentless pursuit of knowledge and innovation.
+        As a tech leader, I thrive on tackling complex operational challenges head-on. Whether modernizing platforms with DevOps and cloud, rolling out innovative data solutions, or launching new products, I assemble cross-functional teams to identify and resolve key constraints.
     </p>
      <p class="lead">
-        Throughout my career, I've effectively bridged the gap between business needs and technological capabilities, navigating a spectrum of roles that demand adaptability and a keen ability to embrace new technologies. This has been pivotal in enhancing user experiences and elevating team performance.
+        We follow lean principles and automate processes to optimize architectures and accelerate cycle times. I foster an environment of continuous improvement, implementing automated testing and monitoring to drive efficiency gains. My teams are empowered to remediate technical debt and deliver high-velocity performance.
      </p>
      <p class="lead">
-        I am adept at integrating diverse tech domains to deliver successful products, focusing on backend and client-side enhancements. My professional journey is marked by continuous improvement and a commitment to fostering an inclusive environment that delivers impactful results.
+        Those "a-ha" moments when we've leveled up our tech capabilities are incredibly energizing. Suddenly bottlenecks are resolved, insights are flowing, and we're fueling the business with reliable systems operating at scale. I get fired up equipping teams with the dashboards and data to make informed decisions rapidly.s.
+     </p>
+      <p class="lead">
+        My enthusiasm lies in unlocking those performance wins and fostering an environment of acceleration. Let's amp up your technical engine together - I'll bring the passion for driving impactful change.
      </p>
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
     URL: "https://www.linkedin.com/in/nicholasngtpm"
   image:
-    x: "images/who-am-i/showcase1@5x.png"
+    x: "images/who-am-i/showcase1@2x.png"
     _2x: "images/who-am-i/showcase1.png"
 
 # education
