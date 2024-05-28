@@ -1,6 +1,7 @@
 /config.yaml
 /static/images
 .vscode
+readme.md
 
 vendor/*/
 wercker
