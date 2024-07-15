@@ -5,7 +5,7 @@ title: "staff program manager"
 jobTitle: "staff program manager"
 company: "apple"
 location: "cupertino ca"
-duration: "2022-present"
+duration: "2022-2023"
 weight: 4
 ---
 ### Revolutionizing Data Management at Apple: Streamlining Sales and Enhancing Global Collaboration
