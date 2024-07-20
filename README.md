@@ -15,10 +15,4 @@ Welcome to the repository for my professional portfolio website built with Hugo.
 - **Markdown**: For content creation.
 - **HTML/CSS**: Custom styling and layout adjustments.
 
-## Setup Instructions
-
-To run this project locally, follow these steps:
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/nicholasng/nicholasng.me.git
+## Hosted at www.nicholasng.me
