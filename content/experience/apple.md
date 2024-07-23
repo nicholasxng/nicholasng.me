@@ -1,8 +1,8 @@
 ---
 date: 2021-05-01T00:00:00+01:00
 draft: false
-title: "staff program manager"
-jobTitle: "staff program manager"
+title: "senior program manager"
+jobTitle: "senior program manager"
 company: "apple"
 location: "cupertino ca"
 duration: "2022-2023"
