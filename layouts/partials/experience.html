@@ -1,4 +1,4 @@
-{{ if .Site.Data.homepage.experience.enable }}
+{{ if hugo.Data.homepage.experience.enable }}
 <section id="experience" class="section-experience section section--border-bottom rad-animation-group">
     <div class="container">
         <div class="row flex-column-reverse flex-md-row rad-fade-down">
@@ -29,8 +29,8 @@
                     <em>And {{ $xpExtra }} more</em><br />
                     <a href="{{ absURL "experience" }} " title=" See additional {{ $xpExtra }} experience items"
                         class="btn btn-primary btn-all-experience">
-                        <i class="{{ .Site.Data.homepage.experience.button3.icon }}"></i>
-                        {{ .Site.Data.homepage.experience.button3.btnText }}
+                        <i class="{{ hugo.Data.homepage.experience.button3.icon }}"></i>
+                        {{ hugo.Data.homepage.experience.button3.btnText }}
                     </a>
                 </div>
                 {{ end }}
