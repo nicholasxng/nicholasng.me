@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+  {{ partial "head_custom.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+      <div class="row rad-fade-down">
+        <div class="col-12">
+          <h1>{{ .Title }}</h1>
+          <ul>
+            {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ partial "footer.html" . }}
+  {{ partial "base-foot.html" . }}
+</body>
+</html>

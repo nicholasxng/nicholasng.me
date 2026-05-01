@@ -10,7 +10,7 @@
 <title>{{ .Site.Data.homepage.head.title }}</title>
 <meta name="description" content="{{ .Site.Data.homepage.head.description }}">
 
-{{ $critical := resources.Get "css/critical.css" | resources.ToCSS | resources.Minify }}
+{{ $critical := resources.Get "css/critical.css" | resources.Minify }}
 <style data-generator="critical-css">
 {{ $critical.Content | safeCSS }}
 </style>
@@ -27,8 +27,8 @@
 {{ $cssBundle := $cssResources | resources.Concat "css/bundle.css" }}
 
 
-<!-- Purge CSS -->
-{{ $css := $cssBundle | resources.PostCSS }} 
+<!-- Keep CSS pipeline compatible across older/newer Hugo versions -->
+{{ $css := $cssBundle }}
 {{ if hugo.IsProduction }} 
     {{ $css = $css | minify | fingerprint | resources.PostProcess }} 
 {{ end }}

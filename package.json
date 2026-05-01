@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "lint": "npm run lint:hugo",
+    "lint:hugo": "hugo --destination /tmp/nicholasng-me-lint"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
