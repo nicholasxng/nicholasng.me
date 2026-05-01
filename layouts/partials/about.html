@@ -1,10 +1,10 @@
-{{ if hugo.Data.homepage.about.enable }}
+{{ if .Site.Data.homepage.about.enable }}
 <section class="section rad-animation-group pb-0" id="about">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="about__profile-picture col-12 col-md-6">
-        {{ $img := resources.Get hugo.Data.homepage.about.image.x }}
-        {{ $img2x := resources.Get hugo.Data.homepage.about.image._2x }}      
+        {{ $img := resources.Get .Site.Data.homepage.about.image.x }}
+        {{ $img2x := resources.Get .Site.Data.homepage.about.image._2x }}      
         {{ $imgWebp := $img.Resize (printf "%dx%d webp" $img.Width $img.Height) }}
         {{ $img2xWebp := $img.Resize (printf "%dx%d webp" $img2x.Width $img2x.Height) }}
         <picture>
@@ -23,15 +23,15 @@
         </picture>
       </div>
       <div class="col-12 col-md-6 my-auto my-auto">
-        <h2>{{ hugo.Data.homepage.about.title }}</h2>
-        {{ hugo.Data.homepage.about.content | safeHTML }}
+        <h2>{{ .Site.Data.homepage.about.title }}</h2>
+        {{ .Site.Data.homepage.about.content | safeHTML }}
         <a
-          href="{{ hugo.Data.homepage.about.button.URL | absURL }}"
+          href="{{ .Site.Data.homepage.about.button.URL | absURL }}"
           target="_blank"
           class="btn btn-primary"
         >
-          <i class="{{ hugo.Data.homepage.about.button.icon }}"></i>
-          {{ hugo.Data.homepage.about.button.btnText }}
+          <i class="{{ .Site.Data.homepage.about.button.icon }}"></i>
+          {{ .Site.Data.homepage.about.button.btnText }}
         </a>
       </div>
     </div>
