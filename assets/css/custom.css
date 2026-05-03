@@ -1,114 +1,126 @@
-/* You can customize theme styles here */
-/* berkeley blue: #003262
-california gold: #FDB515 
-founder's rock: #3B7EA1
-medalist: #FDB515*/
-.header .navbar-brand span:first-child{
+/* Custom theme styles for nicholasng.me */
+/* Color palette:
+   Berkeley Blue:   #003262
+   California Gold: #FDB515
+   Founder's Rock:  #3B7EA1
+   Medalist:        #FDB515
+   Brand Teal:      #478079
+*/
+
+/* ─── Header / Nav ─────────────────────────────────────── */
+.header .navbar-brand span:first-child {
     color: #3B7EA1;
 }
 
-html body ::selection{
-    background-color:#488079;color:#fff
-}
-
-.profile-image img{
-    max-inline-size: 100%;
-    block-size: auto;
-}
-
-.profile-image img{
-    margin-top: 0px;
-    /* margin-top: 40px; */
-}
-
-.rad-showcase__bg img{
-    margin-top: 0;
-    margin-left: 100px;
-    max-width: 100%;
-}
-@media only screen and (min-width : 768px) {
-    .rad-showcase__bg img{
-        height: 400px;
-    }
-}
-
-.header .navbar-brand{
+.header .navbar-brand {
     flex-direction: row;
 }
 
-.header .navbar-brand span{
+.header .navbar-brand span {
     display: inline;
 }
 
-.header .navbar-brand span:nth-child(2){
+.header .navbar-brand span:nth-child(2) {
     font-family: inherit;
     margin-top: 0;
 }
 
-#breadcrumb-bar{
-    position: relative;
-    padding-top: 120px;
+/* ─── Global Selection Color ────────────────────────────── */
+html body ::selection {
+    background-color: #488079;
+    color: #fff;
 }
 
-ul.breadcrumbs{
+/* ─── Profile Image ─────────────────────────────────────── */
+.profile-image img {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-top: 0;
+}
+
+.about__profile-picture img {
+    object-fit: contain;
+}
+
+/* ─── Showcase / Hero ───────────────────────────────────── */
+.rad-showcase__bg img {
+    margin-top: 0;
+    margin-left: 100px; /* Intentional offset to align hero image on desktop */
+    max-width: 100%;
+}
+
+/* ─── Breadcrumb Bar ────────────────────────────────────── */
+#breadcrumb-bar {
+    position: relative;
+    padding-top: 120px; /* Clears sticky header height (~80px) plus breathing room */
+}
+
+ul.breadcrumbs {
     display: inline;
     padding-left: 0;
 }
-ul.breadcrumbs li:not(:last-child):after{
+
+ul.breadcrumbs li {
+    display: inline;
+}
+
+ul.breadcrumbs li:not(:last-child)::after {
     content: ">";
     margin-left: 10px;
     margin-right: 10px;
 }
-ul.breadcrumbs li{
-    display: inline;
-}
 
-.book-category{
+/* ─── Book List ─────────────────────────────────────────── */
+.book-category {
     font-size: 1.5em;
-    padding-bottom: .3em;
+    padding-bottom: 0.3em;
     border-bottom: 1px solid rgb(200, 200, 200);
     width: 100%;
 }
-.book-category-anchor .icon{
-    font-size: 12px
+
+.book-category-anchor .icon {
+    font-size: 12px;
 }
-ul.book-category-content{
+
+ul.book-category-content {
     padding-left: 0;
+    list-style: none;
 }
-.book-card a.goodreads{
+
+.book-card a.goodreads {
     float: right;
 }
-.goodreads-search{
+
+.goodreads-search {
     margin-left: 64px;
     width: 16px;
 }
-.book-content{
+
+.book-content {
     width: 100%;
 }
 
 .book-content h5,
-.book-content h6{
+.book-content h6 {
     display: inline;
     font-weight: 300;
 }
-.book-content h5{
+
+.book-content h5 {
     margin-right: 2px;
 }
-.book-content .goodreads-link{
+
+.book-content .goodreads-link {
     float: right;
 }
 
-#books .row{
+#books .row {
     margin: 0;
 }
 
-ul.book-category-content {
-    list-style: none;
-}
 .book-content.featured::before {
-    content: "\2605"; /* Unicode bullet symbol */
-    color: #478079;  /* Bullet color */
-	/* Optional tweaks */
+    content: "\2605"; /* Unicode star symbol */
+    color: #478079;
     font-weight: bold;
     padding-right: 10px;
     background-color: transparent;
@@ -116,24 +128,20 @@ ul.book-category-content {
     left: -5px;
 }
 
-
-.about__profile-picture img{
-    object-fit: contain;
-}
-
-.experience__company{
+/* ─── Experience List ───────────────────────────────────── */
+.experience__company {
     color: #478079;
 }
 
-.experience__location{
+.experience__location {
     font-weight: normal;
 }
 
-.experience+.experience{
+.experience + .experience {
     padding-top: 0;
 }
 
-body.home div.experience{
+body.home div.experience {
     padding-top: 50px;
 }
 
@@ -147,51 +155,62 @@ body.home div.experience{
 .experience.selected a,
 .experience:hover a,
 .experience:active a,
-.experience a:hover, 
-.experience a:active{
+.experience a:hover,
+.experience a:active {
     display: block;
     background-color: #3B7EA1;
 }
+
 .experience.selected a > .experience__company,
 .experience:hover a > .experience__company,
 .experience:active a > .experience__company,
 .experience a:hover > .experience__company,
-.experience a:active > .experience__company{
+.experience a:active > .experience__company {
     color: white;
 }
 
-.all-experience-container{
+.all-experience-container {
     margin-top: 50px;
 }
-.footer__copy a{
+
+/* ─── Footer ────────────────────────────────────────────── */
+.footer__copy a {
     color: white;
 }
 
-@media only screen and (max-width : 768px) {
-    .header .navbar-brand{
+/* ─── Responsive Breakpoints ────────────────────────────── */
+@media only screen and (max-width: 768px) {
+    .header .navbar-brand {
         margin-top: 10px;
     }
 }
 
-@media only screen and (max-width : 990px) {
-    .rad-showcase__bg img{
+@media only screen and (max-width: 990px) {
+    .rad-showcase__bg img {
         margin-left: 0;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1280px){
-    .header{ 
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+    .header {
         padding-top: 10px;
     }
 }
 
-@media only screen and (min-width : 968px) and (max-width : 992px) {
-    .rad-showcase{
+@media only screen and (min-width: 968px) and (max-width: 992px) {
+    .rad-showcase {
         padding-top: 100px;
     }
 }
 
-@media only screen and (min-width : 992px) {    
-    .rad-showcase{
+@media only screen and (min-width: 992px) {
+    .rad-showcase {
         padding-top: 40px;
-    }    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .rad-showcase__bg img {
+        height: 400px;
+    }
 }

@@ -9,8 +9,6 @@ theme = "adritian-free-hugo-theme"
   [[params.plugins.css]]
   URL = "css/main.css"
   [[params.plugins.css]]
-  URL = "css/rad-icons.css"
-  [[params.plugins.css]]
   URL = "css/custom.css"
 
   # JS Plugins
@@ -58,10 +56,11 @@ theme = "adritian-free-hugo-theme"
 
 
 [params]
-  #original sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+  # Active sections only - placeholder/unused sections removed
   sections = ["showcase", "about", "education", "experience", "contact"]
 
-  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+  # TODO: Replace GTM-000000 with your real GTM ID, then remove the inline gtag.js in layouts/partials/head.html
+  googleTagManagerID = "GTM-000000"
   homepageExperienceCount = 6
   
   [params.logo]
@@ -69,8 +68,5 @@ theme = "adritian-free-hugo-theme"
     text2 = ".ng"
 
   [params.footer]
-      copyright = "© lorem ipsum"
-      [params.footer.radity_logo]
-        x = "img/general/design-and-code-radity.png"
-        _2x = "img/general/design-and-code-radity@2x.png"
-        alt = "Design & Code - Radity"
+      # TODO: Update copyright text
+      copyright = "© Nicholas Ng"

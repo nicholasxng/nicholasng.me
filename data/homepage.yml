@@ -1,5 +1,4 @@
 # showcase
-# change this file for live changes! 
 showcase:
   enable: true
   title: "hello, i'm nicholas"
@@ -23,30 +22,6 @@ showcase:
 
     - icon: "github"
       URL: "https://github.com/nicholasxng"
-
-    # - icon: "twitter"
-    #   URL: "https://twitter.com/zetxek"
-
-    # - icon: "dribbble"
-    #   URL: "#"
-
-    # - icon: "behance"
-    #   URL: "#"
-
-    # - icon: "youtube"
-    #   URL: "#"
-
-    # - icon: "instagram"
-    #   URL: "https://www.instagram.com/zetxek/"
-
-    # - icon: "facebook"
-    #   URL: "https://www.facebook.com/zetxek/"
-
-    # - icon: "codepen"
-    #   URL: "#"
-
-    # - icon: "yelp"
-    #   URL: "https://www.yelp.com/"
 
 # about
 about:
@@ -75,29 +50,24 @@ education:
   enable: true
   title: "education"
   items:
-    - university: "university of california berkeley 💙🐻💛 "
+    - university: "university of california berkeley 💙🐻💛"
       year: ""
       degree: "bachelor of arts - economics"
-
-    # - university: "High School of Hard Knocks"
-    #   year: "2009-2012"
-    #   degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
 
 # experience
 experience:
   enable: true
   title: "experience"
   description: >
-    Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives.
+    Over 20 years of experience working with companies across the US. I drive technical program delivery, platform modernization, and operational excellence across cross-functional teams.
   button:
     icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
+    btnText: "LinkedIn"
     URL: "https://www.linkedin.com/in/nicholasngtpm/"
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
-    # URL: "/files/Nicholas Ng 2024.pdf" <- for local deployment
-    URL: "https://nicholasxng.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf" #this is for the githubpages deployment
+    URL: "https://nicholasxng.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf"
 
   items:
     - title: "Sr. Title"
@@ -112,129 +82,33 @@ experience:
       company: "Company, Inc"
       duration: "Jun 2009 - Mar 2010"
 
-# Client & Work
+# client_and_work, testimonial sections disabled — placeholder data removed
+# Re-enable only when real content is ready
 client_and_work:
   title: "Clients & Works"
-  enable: true
+  enable: false
 
-  clients:
-    - logo:
-        x: "images/clients/asgardia.png"
-        _2x: "images/clients/asgardia@2x.png"
-      alt: "Asgardia"
-
-    - logo:
-        x: "images/clients/earth-2.png"
-        _2x: "images/clients/earth-2@2x.png"
-      alt: "Earth 2.0"
-
-    - logo:
-        x: "images/clients/goldline.png"
-        _2x: "images/clients/goldline@2x.png"
-      alt: "Goldline"
-
-    - logo:
-        x: "images/clients/kanba.png"
-        _2x: "images/clients/kanba@2x.png"
-      alt: "Kanba"
-
-    - logo:
-        x: "images/clients/zoo-tv.png"
-        _2x: "images/clients/zoo-tv@2x.png"
-      alt: "Zoo"
-
-    - logo:
-        x: "images/clients/ztos.png"
-        _2x: "images/clients/ztos@2x.png"
-      alt: "Ztos"
-
-  works:
-    - title: "Radity Finance - UI Kit"
-      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "images/works/radity-finance.jpg"
-        _2x: "images/works/radity-finance@2x.jpg"
-      is_even: true
-
-    - title: "Swiss Fintech Website"
-      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "images/works/swissfintech.jpg"
-        _2x: "images/works/swissfintech@2x.jpg"
-      is_even: false
-
-    - title: "Robo Advisor"
-      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "images/works/robo-advisor.jpg"
-        _2x: "images/works/robo-advisor@2x.jpg"
-      is_even: true
-
-# testimonial
 testimonial:
-  enable: true
-  title: "Testimonials"
-  items:
-    - name: "Daniel Jordan"
-      position: "Phonet, CEO"
-      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
-      image:
-        x: "images/testimonials/daniel-jordan.jpg"
-        _2x: "images/testimonials/daniel-jordan@2x.jpg"
-
-    - name: "Jonathan Peters"
-      position: "Textic, CEO"
-      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
-      image:
-        x: "images/testimonials/jonathan-peters.jpg"
-        _2x: "images/testimonials/jonathan-peters@2x.jpg"
-
-    - name: "Antonio Willis"
-      position: "Cyberse, CEO"
-      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
-      image:
-        x: "images/testimonials/antonio-willis.jpg"
-        _2x: "images/testimonials/antonio-willis@2x.jpg"
+  enable: false
 
 # contact
 contact:
   enable: true
   title: "contact"
   form:
-    action: "https://formspree.io/f/mleqvgbz" #testing formspree
+    action: "https://formspree.io/f/mleqvgbz"
     method: "POST"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  phone:
-    title: "Phone Number"
-    number: "+1 510 333 6355"
+  # Phone number removed from repo — add via environment variable or private config if needed
   email:
     title: "Email"
     email: '<a href="mailto:nicholas@nicholasng.me">nicholas.at.nicholasng.dot.me</a>'
-  # address:
-  #   title: "Address"
-  #   address: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
 
 # newsletter
 newsletter:
-  enable: true
-  title: "Newsletter subscription"
-  success_message: "Successfully subscribed"
-  error_message: "Error while subscribing."
-  note: "We'll never share your email with anyone else."
+  enable: false

@@ -1,23 +1,21 @@
-/config.yaml
-/static/images
-.vscode
-readme.md
-
-vendor/*/
-wercker
-.wercker
-node_modules/
-.vercel
-
-# macOS Finder metadata
-.DS_Store
-
-### Hugo ###
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
-
-# Temporary lock file while building
+# Hugo build output
+public/
+resources/_gen/
 .hugo_build.lock
+
+# Node dependencies — never commit node_modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+.env.local
