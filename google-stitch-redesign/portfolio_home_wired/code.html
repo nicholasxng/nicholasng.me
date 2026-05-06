@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NICHOLAS NG — TPM &amp; LEADER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Space+Grotesk:wght@600;700&amp;family=Work+Sans:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#573b00",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#ffdeac",
+                    "on-primary-fixed-variant": "#604100",
+                    "inverse-surface": "#313030",
+                    "inverse-primary": "#fdbb42",
+                    "secondary": "#5e5e5e",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed-dim": "#c9c6c0",
+                    "surface-variant": "#e5e2e1",
+                    "primary-container": "#dfa129",
+                    "surface-container-high": "#eae7e7",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#41403c",
+                    "tertiary": "#5f5e59",
+                    "secondary-container": "#e2e2e2",
+                    "tertiary-container": "#aeaca6",
+                    "surface": "#fcf9f8",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-highest": "#e5e2e1",
+                    "outline": "#827562",
+                    "primary": "#7e5700",
+                    "surface-tint": "#7e5700",
+                    "tertiary-fixed": "#e5e2db",
+                    "on-tertiary-fixed-variant": "#474742",
+                    "on-primary-fixed": "#281900",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#e2e2e2",
+                    "outline-variant": "#d5c4af",
+                    "surface-bright": "#fcf9f8",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#646464",
+                    "on-tertiary-fixed": "#1c1c18",
+                    "on-surface": "#1c1b1b",
+                    "primary-fixed-dim": "#fdbb42",
+                    "on-surface-variant": "#504535",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-background": "#1c1b1b",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "secondary-fixed-dim": "#c6c6c6",
+                    "surface-container-low": "#f6f3f2",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "background": "#fcf9f8",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "3rem",
+                    "container-max": "1280px",
+                    "section-gap": "8rem",
+                    "stack-sm": "0.5rem",
+                    "gutter": "2rem",
+                    "stack-md": "1.5rem"
+            },
+            "fontFamily": {
+                    "body-md": ["Work Sans"],
+                    "button": ["Space Grotesk"],
+                    "headline-lg": ["Epilogue"],
+                    "headline-xl": ["Epilogue"],
+                    "body-lg": ["Work Sans"],
+                    "label-caps": ["Space Grotesk"],
+                    "headline-md": ["Epilogue"]
+            },
+            "fontSize": {
+                    "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "button": ["1rem", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["3rem", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-xl": ["4.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "body-lg": ["1.25rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["0.875rem", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["2rem", {"lineHeight": "1.3", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-card {
+            border: 1px solid theme('colors.on-surface');
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            background-color: theme('colors.primary-container');
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-sm border-b border-on-surface">
+<a class="font-headline-md text-headline-md font-black tracking-tighter text-on-surface" href="#">NICHOLAS NG</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps uppercase text-primary border-b-4 border-primary pb-1" href="#about">ABOUT</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="{{DATA:SCREEN:SCREEN_20}}">EXPERIENCE</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="#education">EDUCATION</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="#contact">CONTACT</a>
+</div>
+<button class="bg-on-surface text-surface px-6 py-3 font-button text-button uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors border border-on-surface">
+            DOWNLOAD CV
+        </button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col justify-center px-gutter border-b border-on-surface bg-surface">
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-end">
+<div class="md:col-span-8">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4 block">TECH PROGRAM MANAGER &amp; LEADER</span>
+<h1 class="font-headline-xl text-headline-xl mb-stack-md leading-none">
+                        hello, i'm nicholas i deliver things
+                    </h1>
+<p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+                        Specializing in bridge-building between engineering, product, and business goals. I transform complex roadmaps into high-impact delivery.
+                    </p>
+</div>
+<div class="md:col-span-4 flex justify-end">
+<div class="w-full aspect-[3/4] border-4 border-on-surface relative group overflow-hidden">
+<img alt="Nicholas Ng professional portrait" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional, high-contrast portrait of a male technical leader set against a minimalist architectural background. The lighting is dramatic and directional, creating deep shadows and bright highlights that emphasize a focused, authoritative expression. The overall color palette is restricted to warm blacks, crisp whites, and subtle golden tones, reflecting a modern minimalist aesthetic with premium editorial quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZN9YpcfjTDlPMfeYdN62SOw3iDDPKpGe25Aw7ABgoAVOUuN5fZRfrbdA2_JL45hqpMk3AMjvSELNweXAW-Rw0Wcmy8KWzmhd3Nj5UnbNCCbssr-BfAPhuLrT-oMgS8-xDvNbQvqu8lrIdwQvBvqJ8Qh1uMn_-71atQoVn1b4Q5wpfLzfuELuMavxxThgSbQZF_yMf0KEpz25rPVllcr99dPGylj-oGRcjqM99zo8FOU2a-APk1PzURx9bWj_fm-Tz8Pc7oYbmwlE"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-gutter bg-on-surface text-surface" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center">
+<div class="md:col-span-5">
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">ABOUT ME</h2>
+<div class="w-16 h-1 bg-primary-container mb-stack-md"></div>
+</div>
+<div class="md:col-span-7">
+<p class="font-body-lg text-body-lg leading-relaxed opacity-90">
+                        I am a Technical Program Manager who thrives at the intersection of technical excellence and strategic execution. With a background from UC Berkeley and leadership roles at industry giants like Apple and King Games, I focus on creating scalable systems that allow teams to do their best work. My approach is rooted in clarity, directness, and a relentless focus on the "why" behind every project.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Experience Section (Bento Grid Style) -->
+<section class="py-section-gap px-gutter" id="experience">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-lg text-headline-lg">EXPERIENCE</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">04 RELEVANT ROLES</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Apple -->
+<div class="md:col-span-8 bento-card p-stack-lg bg-surface flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md">Apple</h3>
+<span class="font-label-caps text-label-caps px-3 py-1 border border-on-surface">CURRENT</span>
+</div>
+<p class="font-body-lg text-body-lg mb-6">Leading technical programs across cross-functional teams to deliver seamless user experiences and robust infrastructure.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="font-label-caps text-xs border border-on-surface px-2 py-1 uppercase">Infrastructure</span>
+<span class="font-label-caps text-xs border border-on-surface px-2 py-1 uppercase">Stakeholder Management</span>
+<span class="font-label-caps text-xs border border-on-surface px-2 py-1 uppercase">Leadership</span>
+</div>
+</div>
+<!-- King Games -->
+<div class="md:col-span-4 bento-card p-stack-lg bg-primary-container text-on-primary-container flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">King Games</h3>
+<p class="font-body-md text-body-md opacity-90 italic">Technical Program Manager</p>
+</div>
+<p class="font-body-md text-body-md">Optimized delivery pipelines for global gaming titles, managing millions of concurrent users.</p>
+</div>
+<!-- Rally Health -->
+<div class="md:col-span-5 bento-card p-stack-lg bg-surface flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2 text-primary">Rally Health</h3>
+<p class="font-body-md text-body-md">Spearheaded healthcare tech initiatives focusing on digital patient engagement and data security.</p>
+</div>
+<div class="font-label-caps text-label-caps">2017 — 2019</div>
+</div>
+<!-- Box -->
+<div class="md:col-span-7 bento-card p-stack-lg bg-on-surface text-surface flex flex-col justify-between min-h-[320px]">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Box</h3>
+<p class="font-body-lg text-body-lg">Platform engineering coordination and enterprise cloud content management programs.</p>
+</div>
+<span class="material-symbols-outlined text-4xl">cloud_done</span>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="font-label-caps text-xs opacity-60">IMPACT</span>
+<span class="font-headline-md text-headline-md">15%</span>
+<span class="font-label-caps text-xs opacity-60">EFFICIENCY UP</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="py-section-gap px-gutter bg-surface-container" id="education">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center border-t-4 border-on-surface pt-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">EDUCATION</h2>
+<h3 class="font-headline-md text-headline-md text-primary">University of California, Berkeley</h3>
+<p class="font-body-lg text-body-lg mt-2">B.S. Engineering &amp; Computer Science</p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 border-2 border-primary translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+<div class="relative aspect-video bg-on-surface flex items-center justify-center overflow-hidden">
+<img alt="UC Berkeley representation" class="w-full h-full object-cover opacity-30 grayscale" data-alt="A stylized, architectural capture of a modern university campus during the blue hour. The image features clean geometric lines of glass and concrete buildings, reflecting a deep navy and amber color palette. The atmosphere is academic, sophisticated, and forward-looking, perfectly aligning with a premium professional portfolio's visual language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSs6nufVY6GXIgC_ULdT9VUIuZq2C4OUGO39Gcn9DWAm2KU9On4QJJ1obi2RsZTULhdlMOtftAlw7DyXIPYlrl0hDlxa1Q9mAvH04NAoHd9ENZdoBZXkHm_j2JBJ8LW5qn7diO6mqM49tN0cYkQDy8elgfUJ8aWbE4hynZ_CkLmBRdVokgcHA5LTO3qZ4hHayKeoICXbU2Bi7DBqHfI4vWE9E72NJecf4hF87ClNaatAFUZWJ_e15DylRJseC6KSPJNdrCtkr84JY"/>
+<span class="absolute font-headline-xl text-surface/20 select-none">BERKELEY</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-gutter bg-surface" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
+<div class="md:col-span-5">
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">LET'S CONNECT</h2>
+<p class="font-body-lg text-body-lg mb-8">Looking for a leader who can navigate the complex terrain of modern software delivery? Drop me a message.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="mailto:nicholas@example.com">
+<span class="material-symbols-outlined p-4 border border-on-surface group-hover:bg-primary-container transition-colors">mail</span>
+<span class="font-label-caps text-label-caps">NICHOLAS@EXAMPLE.COM</span>
+</a>
+<a class="flex items-center gap-4 group" href="#">
+<span class="material-symbols-outlined p-4 border border-on-surface group-hover:bg-primary-container transition-colors">linked_camera</span>
+<span class="font-label-caps text-label-caps">LINKEDIN PROFILE</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-7 bg-surface p-stack-lg border-2 border-on-surface">
+<form class="space-y-stack-md">
+<div>
+<label class="font-label-caps text-label-caps uppercase block mb-2">FULL NAME</label>
+<input class="w-full bg-transparent border-b-2 border-on-surface focus:border-primary transition-colors py-2 outline-none" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase block mb-2">EMAIL ADDRESS</label>
+<input class="w-full bg-transparent border-b-2 border-on-surface focus:border-primary transition-colors py-2 outline-none" type="email"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase block mb-2">MESSAGE</label>
+<textarea class="w-full bg-transparent border-b-2 border-on-surface focus:border-primary transition-colors py-2 outline-none resize-none" rows="4"></textarea>
+</div>
+<button class="bg-on-surface text-surface w-full py-5 font-button text-button uppercase hover:bg-primary-container hover:text-on-primary-container transition-all flex justify-between items-center px-8 group" type="submit">
+                                SEND MESSAGE
+                                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md bg-on-surface text-surface-variant border-t-4 border-on-surface">
+<a class="font-headline-md text-headline-md font-bold text-surface" href="#">NICHOLAS NG</a>
+<div class="font-label-caps text-label-caps text-center md:text-left">
+            © 2024 NICHOLAS NG — TPM &amp; LEADER
+        </div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">GITHUB</a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">EMAIL</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Experience - NICHOLAS NG</title>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Space+Grotesk:wght@600;700&amp;family=Work+Sans:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-secondary-fixed": "#1b1b1b",
+                  "on-surface-variant": "#504535",
+                  "on-primary-container": "#573b00",
+                  "error-container": "#ffdad6",
+                  "primary-fixed": "#ffdeac",
+                  "surface": "#fcf9f8",
+                  "on-tertiary": "#ffffff",
+                  "secondary-container": "#e2e2e2",
+                  "on-primary": "#ffffff",
+                  "on-secondary-fixed-variant": "#474747",
+                  "background": "#fcf9f8",
+                  "surface-tint": "#7e5700",
+                  "secondary-fixed-dim": "#c6c6c6",
+                  "tertiary-fixed": "#e5e2db",
+                  "tertiary-container": "#aeaca6",
+                  "surface-container-low": "#f6f3f2",
+                  "surface-container-highest": "#e5e2e1",
+                  "surface-bright": "#fcf9f8",
+                  "tertiary": "#5f5e59",
+                  "on-surface": "#1c1b1b",
+                  "surface-dim": "#dcd9d9",
+                  "on-tertiary-container": "#41403c",
+                  "secondary-fixed": "#e2e2e2",
+                  "on-secondary": "#ffffff",
+                  "surface-container-high": "#eae7e7",
+                  "on-secondary-container": "#646464",
+                  "surface-container": "#f0eded",
+                  "outline-variant": "#d5c4af",
+                  "tertiary-fixed-dim": "#c9c6c0",
+                  "primary-fixed-dim": "#fdbb42",
+                  "surface-container-lowest": "#ffffff",
+                  "primary-container": "#dfa129",
+                  "on-tertiary-fixed-variant": "#474742",
+                  "on-primary-fixed-variant": "#604100",
+                  "on-tertiary-fixed": "#1c1c18",
+                  "on-background": "#1c1b1b",
+                  "on-primary-fixed": "#281900",
+                  "inverse-primary": "#fdbb42",
+                  "inverse-on-surface": "#f3f0ef",
+                  "secondary": "#5e5e5e",
+                  "surface-variant": "#e5e2e1",
+                  "on-error-container": "#93000a",
+                  "outline": "#827562",
+                  "on-error": "#ffffff",
+                  "inverse-surface": "#313030",
+                  "primary": "#7e5700",
+                  "error": "#ba1a1a"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "section-gap": "8rem",
+                  "stack-lg": "3rem",
+                  "container-max": "1280px",
+                  "stack-md": "1.5rem",
+                  "stack-sm": "0.5rem",
+                  "gutter": "2rem"
+          },
+          "fontFamily": {
+                  "body-md": [
+                          "Work Sans"
+                  ],
+                  "label-caps": [
+                          "Space Grotesk"
+                  ],
+                  "headline-xl": [
+                          "Epilogue"
+                  ],
+                  "headline-lg": [
+                          "Epilogue"
+                  ],
+                  "body-lg": [
+                          "Work Sans"
+                  ],
+                  "headline-md": [
+                          "Epilogue"
+                  ],
+                  "button": [
+                          "Space Grotesk"
+                  ]
+          },
+          "fontSize": {
+                  "body-md": [
+                          "1rem",
+                          {
+                                  "lineHeight": "1.6",
+                                  "fontWeight": "400"
+                          }
+                  ],
+                  "label-caps": [
+                          "0.875rem",
+                          {
+                                  "lineHeight": "1.2",
+                                  "letterSpacing": "0.1em",
+                                  "fontWeight": "600"
+                          }
+                  ],
+                  "headline-xl": [
+                          "4.5rem",
+                          {
+                                  "lineHeight": "1.1",
+                                  "letterSpacing": "-0.04em",
+                                  "fontWeight": "800"
+                          }
+                  ],
+                  "headline-lg": [
+                          "3rem",
+                          {
+                                  "lineHeight": "1.2",
+                                  "letterSpacing": "-0.02em",
+                                  "fontWeight": "700"
+                          }
+                  ],
+                  "body-lg": [
+                          "1.25rem",
+                          {
+                                  "lineHeight": "1.6",
+                                  "fontWeight": "400"
+                          }
+                  ],
+                  "headline-md": [
+                          "2rem",
+                          {
+                                  "lineHeight": "1.3",
+                                  "fontWeight": "700"
+                          }
+                  ],
+                  "button": [
+                          "1rem",
+                          {
+                                  "lineHeight": "1",
+                                  "letterSpacing": "0.02em",
+                                  "fontWeight": "700"
+                          }
+                  ]
+          }
+  },
+      },
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased pt-24 min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-sm border-b border-on-surface dark:border-outline-variant">
+<div class="font-headline-md text-headline-md font-black tracking-tighter text-on-surface dark:text-on-surface-variant">
+      NICHOLAS NG
+    </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps uppercase text-on-surface dark:text-on-surface-variant hover:text-primary transition-colors" href="#">
+        ABOUT
+      </a>
+<a class="font-label-caps text-label-caps uppercase text-primary dark:text-primary-fixed-dim border-b-4 border-primary dark:border-primary-fixed-dim pb-1" href="{{DATA:SCREEN:SCREEN_20}}">
+        EXPERIENCE
+      </a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface dark:text-on-surface-variant hover:text-primary transition-colors" href="#">
+        EDUCATION
+      </a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface dark:text-on-surface-variant hover:text-primary transition-colors" href="#">
+        CONTACT
+      </a>
+</div>
+<button class="font-button text-button uppercase bg-on-surface text-surface px-6 py-3 border-2 border-on-surface hover:bg-primary hover:text-on-primary transition-colors hidden md:block">
+      DOWNLOAD CV
+    </button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-gap flex flex-col lg:flex-row gap-12 lg:gap-24">
+<!-- Left Sidebar (Vertical Timeline/Tabs) -->
+<aside class="w-full lg:w-1/3 flex flex-col gap-4"><!-- Apple (Inactive) -->
+<a class="p-4 border-l-4 border-transparent hover:border-primary-container transition-all cursor-pointer group block" href="{{DATA:SCREEN:SCREEN_17}}">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Apple</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2 uppercase">Senior Program Manager</p>
+</a>
+<!-- King Games (Active) -->
+<div class="p-4 border-l-4 border-on-surface bg-primary-container text-on-primary-container shadow-[4px_4px_0px_0px_rgba(28,27,27,1)] transition-all cursor-pointer">
+<h3 class="font-headline-md text-headline-md">King Games</h3>
+<p class="font-label-caps text-label-caps mt-2 uppercase">Staff Technical Program Manager</p>
+</div>
+<!-- Rally Health (Inactive) -->
+<a class="p-4 border-l-4 border-transparent hover:border-primary-container transition-all cursor-pointer group block" href="{{DATA:SCREEN:SCREEN_5}}">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Rally Health</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2 uppercase">Senior Technical Program Manager</p>
+</a>
+<!-- Box (Inactive) -->
+<a class="p-4 border-l-4 border-transparent hover:border-primary-container transition-all cursor-pointer group block" href="{{DATA:SCREEN:SCREEN_21}}">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Box</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2 uppercase">Staff Technical Program Manager</p>
+</a></aside>
+<!-- Right Content Area (Dynamic Narrative) -->
+<section class="w-full lg:w-2/3 flex flex-col gap-stack-lg">
+<!-- Apple Content (Active) -->
+<div class="hidden">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+          Revolutionizing Data Management at Apple: Streamlining Sales and Enhancing Global Collaboration
+        </h1>
+</div>
+<div class="prose prose-lg max-w-none font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-8">
+<p>
+          Facing significant challenges in data integration and quality, my role as the program manager for Core Data Management supporting Worldwide Sales involved unifying siloed data sources into a centralized repository. This effort was crucial for providing a comprehensive view and ensuring data reliability through strict quality controls and governance policies.
+        </p>
+<p>
+          I aligned our sales strategies with product management's roadmap, deploying innovative data features that boosted sales efficiency by 15% and sped up product launches by 20%. To streamline processes, I standardized request handling and refined scope parameters, reducing our backlog by a third and improving delivery speed by 25%. I also prioritized enhancing collaboration across teams, establishing global forums that briefed sales leadership on upcoming products and data governance.
+        </p>
+<p>
+          Despite hurdles, my commitment to value stream mapping and facilitating cross-team problem-solving sessions drove significant efficiency gains and strategic alignment across worldwide sales. My approach emphasized clear communication, pragmatic process enhancements, and structured stakeholder collaboration, effectively navigating the complexities of master data management.
+        </p>
+</div>
+</div>
+<!-- King Games Content (Hidden) -->
+<div class="block"><div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+          King Games Levels Up: Leading the Charge in Player Loyalty and Engagement
+        </h1>
+</div>
+<div class="prose prose-lg max-w-none font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-8">
+<p>
+          Leading the launch of King Games' inaugural loyalty program, I focused on leveraging three key value propositions to enhance our flagship title, Candy Crush: increasing player retention, boosting monetization opportunities, and gathering valuable player insights. By rewarding continuous play, the program significantly heightened player engagement and retention, encouraging deeper and more frequent interactions with the game.
+        </p>
+<p>
+          This strategic initiative also opened new monetization channels by integrating rewards that resonated with players, driving a 10% increase in monthly bookings to $400K, and fostering a 20% conversion rate with 63K reward redemptions. The program successfully attracted 70K unique visitors, with a notable 25% return rate, demonstrating its effectiveness in enhancing financial performance and player satisfaction.
+        </p>
+<p>
+          Moreover, the loyalty program served as a critical tool for collecting data on player behaviors and preferences, which informed adaptive marketing strategies and game development. This data-driven approach helped tailor experiences that met player needs, enhancing the overall game strategy and securing Candy Crush’s position as a leader in the competitive gaming market.
+        </p>
+<p>
+          The implementation of these strategies ensured that the loyalty program was not just a mechanism for rewards but a cornerstone of King Games' player engagement and growth strategy.
+        </p>
+</div></div>
+<!-- Rally Health Content (Hidden) -->
+<div class="hidden">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+          Transforming Healthcare at Rally Health: Leading Through Innovation and Resilience
+        </h1>
+</div>
+<div class="prose prose-lg max-w-none font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-8">
+<p>
+          At Rally Health, my tenure was marked by transformative challenges that propelled our healthcare solutions to unprecedented levels. As I navigated through these endeavors, the intricacy of our systems and the grandeur of our ambitions compelled me to innovate and adapt relentlessly.
+        </p>
+<p>
+          Leading the charge on the Medicare Fitness program, I found myself at the heart of healthcare innovation. Launching the UHC Medicare fitness program, my initial major initiative, generated an astounding $215M in first-year enrollment revenue, securing its place among the top ten initiatives within the company. This achievement was more than a metric; it was a testament to our ability to meaningfully connect with and impact the lives of our members. Our team, a dynamic blend of over 15 cross-functional groups, combined Agile and traditional methodologies to surpass our goals, enhancing feature delivery and user engagement. As the world adapted to a pandemic, we swiftly pivoted to establish a media portal that offered over 12,000 virtual and streaming classes, revitalizing community engagement and utilization.
+        </p>
+<p>
+          In the realm of developer tooling, my advocacy for a seamless and efficient engineering environment led to significant advances. By consolidating disparate engineering activities into five cohesive DevOps programs, we saved the organization $1M annually. Yet, the real triumph was fostering a collaborative spirit through tools like Stack Overflow for Teams, revolutionizing how our engineers shared knowledge and tackled challenges, thereby reducing resolution times by a remarkable 30%. Our journey also included transitioning pilot teams to modern CI/CD tools like Helm charts and GitHub Actions, dramatically reducing cycle times and setting new benchmarks for efficiency.
+        </p>
+<p>
+          Within the PMO, I spearheaded the establishment of a TPM practices committee that not only clarified roles but also streamlined processes, fostering unprecedented levels of collaboration across teams. This initiative was about more than process improvement; it was about cultivating a culture of continuous learning and adaptation, aligning everyone from product management to software engineering.
+        </p>
+<p>
+          Through these roles at Rally Health, I tackled immense challenges and paved pathways for innovation, embedding resilience at the core of our operations. Like a protagonist in a complex system's narrative, each initiative I led wove into the broader fabric of our organizational transformation, driven by a relentless pursuit of excellence and a deep commitment to our community's health.
+        </p>
+</div>
+</div>
+<!-- Box Content (Hidden) -->
+<div class="hidden">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+          Revamping Infrastructure: Pioneering Box.com's Hardware Engineering Revolution
+        </h1>
+</div>
+<div class="prose prose-lg max-w-none font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-8">
+<p>
+          Facing significant challenges with decentralized hardware design and procurement processes, such as inconsistency, increased costs, and supply chain complications, my role at Box.com as a Hardware Engineering TPM was pivotal in transforming our infrastructure to support expansive cloud storage services. I led the strategic centralization of hardware operations, unifying over 30 hardware configurations across 50 platforms, which enhanced system reliability and scalability, preparing Box for future growth.
+        </p>
+<p>
+          This overhaul not only improved operational visibility and efficiency but also enabled us to leverage economies of scale, reducing costs and simplifying vendor negotiations. Further, I reengineered Box’s storage solutions, achieving a breakthrough that doubled our performance and reduced ownership costs by 25%, saving $2 million. This not only demonstrated our efficiency commitment but also positioned Box as a leader in high-performance, cost-effective cloud storage.
+        </p>
+<p>
+          Additionally, I enhanced our decision-making processes, increasing solution evaluation speed by 25% by tripling hardware evaluation capacity and delegating detailed testing to partners. This streamlined hardware deployment and fostered stronger collaborations, ensuring rapid and high-quality rollouts.
+        </p>
+<p>
+          These initiatives significantly boosted Box’s operational efficiencies and reinforced its position as a robust, scalable cloud storage solution, mirroring continuous improvement and innovative leadership.
+        </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md bg-on-surface dark:bg-surface-container-lowest border-t-4 border-on-surface dark:border-outline mt-auto">
+<div class="font-headline-md text-headline-md font-bold text-surface dark:text-on-surface">
+      © 2024 NICHOLAS NG — TPM &amp; LEADER
+    </div>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="font-label-caps text-label-caps text-surface-variant/70 dark:text-on-surface-variant hover:text-primary-fixed transition-all hover:underline decoration-2 underline-offset-4" href="#">
+        LINKEDIN
+      </a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 dark:text-on-surface-variant hover:text-primary-fixed transition-all hover:underline decoration-2 underline-offset-4" href="#">
+        GITHUB
+      </a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 dark:text-on-surface-variant hover:text-primary-fixed transition-all hover:underline decoration-2 underline-offset-4" href="#">
+        EMAIL
+      </a>
+</div>
+</footer>
+</body></html>
