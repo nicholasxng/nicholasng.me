@@ -1,0 +1,22 @@
+<!-- Override of experience list layout for the redesign -->
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "head.html" . }} 
+  {{ partial "head_custom.html" . }}
+</head>
+
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+  {{ partial "header.html" . }}
+
+  <main class="pt-24 min-h-screen">
+    <!-- For now, we just render the bento box. Later this will be the sidebar-match overview design -->
+    {{ partial "experience.html" . }}
+  </main>
+
+  {{ partial "footer.html" . }} 
+  {{ partial "base-foot.html" . }}
+</body>
+
+</html>
