@@ -1,44 +1,59 @@
-{{ if .Site.Data.homepage.experience.enable }}
-<section id="experience" class="section-experience section section--border-bottom rad-animation-group">
-    <div class="container">
-        <div class="row flex-column-reverse flex-md-row rad-fade-down">
-            <div class="col-12 cold-md-12 col-sm-6 mt-5 mt-sm-0">
-                {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "experience") }}
-                {{ $xpCount := len $xp }}
-                {{/* In the homepage we limit to homepageExperienceCount param; in the inner page we display all */}}
-                {{ $totalCount := .Site.Params.homepageExperienceCount }}
-                
-                {{ if not .IsHome }}
-                {{ $totalCount = len $xp }}
-                {{ end }}
-
-                {{/* Use $totalCount from params — do not hardcode this value */}}
-                {{ range first $totalCount $xp }}
-                <div class="experience">
-                    <a href="{{.Permalink}}">
-                        <div class="experience__date">{{ .Params.duration }}</div>
-                        <div class="experience__title">{{ .Params.jobTitle }}</div>
-                        <div class="experience__company">{{ .Params.company }}. <span class="experience__location">{{ .Params.location }}</span></div>
-                    </a>
-                </div>
-                {{ end }}
-
-                {{ if gt $xpCount $totalCount }}
-                <div class="all-experience-container">
-                    {{ $xpExtra := sub $xpCount $totalCount }}
-                    <em>And {{ $xpExtra }} more</em><br />
-                    <a href="{{ absURL "experience" }} " title="See additional {{ $xpExtra }} experience items"
-                        class="btn btn-primary btn-all-experience">
-                        <i class="{{ .Site.Data.homepage.experience.button3.icon }}"></i>
-                        {{ .Site.Data.homepage.experience.button3.btnText }}
-                    </a>
-                </div>
-                {{ end }}
-            </div>
-            <div class="col-12 col-md-6">
-                {{ partial "experience-description.html" . }}
-            </div>
-        </div>
-    </div>
+<!-- Experience Section (Bento Grid Style) -->
+<section class="py-section-gap px-gutter" id="experience">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-lg text-headline-lg">EXPERIENCE</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">04 RELEVANT ROLES</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Apple -->
+<div class="md:col-span-8 bento-card p-stack-lg bg-surface flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md">Apple</h3>
+<span class="font-label-caps text-label-caps px-3 py-1 border border-on-surface">CURRENT</span>
+</div>
+<p class="font-body-lg text-body-lg mb-6">Leading technical programs across cross-functional teams to deliver seamless user experiences and robust infrastructure.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="font-label-caps text-xs border border-on-surface px-2 py-1 uppercase">Infrastructure</span>
+<span class="font-label-caps text-xs border border-on-surface px-2 py-1 uppercase">Stakeholder Management</span>
+<span class="font-label-caps text-xs border border-on-surface px-2 py-1 uppercase">Leadership</span>
+</div>
+</div>
+<!-- King Games -->
+<div class="md:col-span-4 bento-card p-stack-lg bg-primary-container text-on-primary-container flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">King Games</h3>
+<p class="font-body-md text-body-md opacity-90 italic">Technical Program Manager</p>
+</div>
+<p class="font-body-md text-body-md">Optimized delivery pipelines for global gaming titles, managing millions of concurrent users.</p>
+</div>
+<!-- Rally Health -->
+<div class="md:col-span-5 bento-card p-stack-lg bg-surface flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2 text-primary">Rally Health</h3>
+<p class="font-body-md text-body-md">Spearheaded healthcare tech initiatives focusing on digital patient engagement and data security.</p>
+</div>
+<div class="font-label-caps text-label-caps">2017 — 2019</div>
+</div>
+<!-- Box -->
+<div class="md:col-span-7 bento-card p-stack-lg bg-on-surface text-surface flex flex-col justify-between min-h-[320px]">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Box</h3>
+<p class="font-body-lg text-body-lg">Platform engineering coordination and enterprise cloud content management programs.</p>
+</div>
+<span class="material-symbols-outlined text-4xl">cloud_done</span>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="font-label-caps text-xs opacity-60">IMPACT</span>
+<span class="font-headline-md text-headline-md">15%</span>
+<span class="font-label-caps text-xs opacity-60">EFFICIENCY UP</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-{{ end }}
