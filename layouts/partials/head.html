@@ -10,48 +10,7 @@
 <title>{{ .Site.Data.homepage.head.title }}</title>
 <meta name="description" content="{{ .Site.Data.homepage.head.description }}">
 
-{{ $critical := resources.Get "css/critical.css" | resources.Minify }}
-<style data-generator="critical-css">
-{{ $critical.Content | safeCSS }}
-</style>
 
-{{ $cssResources := slice }}
-{{ range .Site.Params.plugins.css }}
-    {{ if findRE "^http" .URL }}
-        <link rel="stylesheet" href="{{ .URL | absURL }}">
-    {{ else }}
-        {{ $cssFile := resources.Get .URL }}
-        {{ $cssResources = $cssResources | append $cssFile }}
-    {{ end }}
-{{ end }}
-{{ $cssBundle := $cssResources | resources.Concat "css/bundle.css" }}
-
-
-<!-- Keep CSS pipeline compatible across older/newer Hugo versions -->
-{{ $css := $cssBundle }}
-{{ if hugo.IsProduction }} 
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }} 
-{{ end }}
-
-<link
-  rel="preload"
-  href="{{ $css.RelPermalink }}"
-  as="style"
-  data-generator="purgeCSS"
-  onload="this.onload=null;this.rel='stylesheet'"
-  {{ if hugo.IsProduction -}} 
-    integrity="{{ $css.Data.Integrity }}"
-  {{- end }}
-/>
-<noscript>
-  <link 
-    rel="stylesheet" 
-    href="{{ $css.RelPermalink }}"
-    {{ if hugo.IsProduction -}} 
-    integrity="{{ $css.Data.Integrity }}"
-    {{- end }}
-  />
-</noscript>
 <!-- <!-- Google tag (gtag.js), google analytics -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZYZVHPS31"></script>
