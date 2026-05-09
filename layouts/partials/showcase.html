@@ -11,9 +11,10 @@
                     </p>
 </div>
 <div class="md:col-span-4 flex justify-end">
-<div class="w-full aspect-[3/4] border-4 border-on-surface relative group overflow-hidden">
-<img alt="Nicholas Ng professional portrait" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional, high-contrast portrait of a male technical leader set against a minimalist architectural background. The lighting is dramatic and directional, creating deep shadows and bright highlights that emphasize a focused, authoritative expression. The overall color palette is restricted to warm blacks, crisp whites, and subtle golden tones, reflecting a modern minimalist aesthetic with premium editorial quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZN9YpcfjTDlPMfeYdN62SOw3iDDPKpGe25Aw7ABgoAVOUuN5fZRfrbdA2_JL45hqpMk3AMjvSELNweXAW-Rw0Wcmy8KWzmhd3Nj5UnbNCCbssr-BfAPhuLrT-oMgS8-xDvNbQvqu8lrIdwQvBvqJ8Qh1uMn_-71atQoVn1b4Q5wpfLzfuELuMavxxThgSbQZF_yMf0KEpz25rPVllcr99dPGylj-oGRcjqM99zo8FOU2a-APk1PzURx9bWj_fm-Tz8Pc7oYbmwlE"/>
-<div class="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-full aspect-[3/4] border-4 border-on-surface relative group overflow-hidden bg-transparent">
+{{ $heroImg := resources.Get "images/who-am-i/delivery_emoji.png" }}
+<img alt="Nicholas Ng professional portrait" class="w-full h-full object-contain transition-all duration-700 p-8" src="{{ $heroImg.RelPermalink }}"/>
+<!-- <div class="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div> -->
 </div>
 </div>
 </div>
