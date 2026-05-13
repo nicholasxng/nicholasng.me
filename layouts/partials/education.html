@@ -1,19 +1,12 @@
-<!-- Education Section -->
-<section class="py-section-gap px-gutter bg-surface-container" id="education">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center border-t-4 border-on-surface pt-12">
-<div>
-<h2 class="font-headline-lg text-headline-lg mb-stack-md">EDUCATION</h2>
-<h3 class="font-headline-md text-headline-md text-primary">University of California, Berkeley</h3>
-<p class="font-body-lg text-body-lg mt-2">B.S. Engineering &amp; Computer Science</p>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 border-2 border-primary translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
-<div class="relative aspect-video bg-on-surface flex items-center justify-center overflow-hidden">
-<img alt="UC Berkeley representation" class="w-full h-full object-cover opacity-30 grayscale" data-alt="A stylized, architectural capture of a modern university campus during the blue hour. The image features clean geometric lines of glass and concrete buildings, reflecting a deep navy and amber color palette. The atmosphere is academic, sophisticated, and forward-looking, perfectly aligning with a premium professional portfolio's visual language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSs6nufVY6GXIgC_ULdT9VUIuZq2C4OUGO39Gcn9DWAm2KU9On4QJJ1obi2RsZTULhdlMOtftAlw7DyXIPYlrl0hDlxa1Q9mAvH04NAoHd9ENZdoBZXkHm_j2JBJ8LW5qn7diO6mqM49tN0cYkQDy8elgfUJ8aWbE4hynZ_CkLmBRdVokgcHA5LTO3qZ4hHayKeoICXbU2Bi7DBqHfI4vWE9E72NJecf4hF87ClNaatAFUZWJ_e15DylRJseC6KSPJNdrCtkr84JY"/>
-<span class="absolute font-headline-xl text-surface/20 select-none">BERKELEY</span>
-</div>
-</div>
-</div>
-</div>
+<!-- Education Section (Scaled 75%) -->
+<section class="py-[6rem] px-gutter bg-surface-container" id="education">
+    <div class="max-w-[960px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[2.25rem] items-center border-t-[3px] border-on-surface pt-9">
+            <div>
+                <h2 class="font-headline-lg text-[2.25rem] mb-[1.125rem] leading-[1.2] tracking-tight">{{ .Site.Data.homepage.education.title | default "EDUCATION" }}</h2>
+                <h3 class="font-headline-md text-[1.5rem] leading-[1.3] text-primary">University of California, Berkeley</h3>
+                <p class="font-body-lg text-[0.9375rem] leading-[1.6] mt-1.5">B.S. Engineering & Computer Science</p>
+            </div>
+        </div>
+    </div>
 </section>
