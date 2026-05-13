@@ -18,7 +18,7 @@ showcase:
 
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/in/nicholasngtpm"
+      URL: "https://www.linkedin.com/in/nicholasxng"
 
     - icon: "github"
       URL: "https://github.com/nicholasxng"
@@ -40,7 +40,7 @@ about:
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
-    URL: "https://www.linkedin.com/in/nicholasngtpm"
+    URL: "https://www.linkedin.com/in/nicholasxng"
   image:
     x: "images/who-am-i/showcase1@2x.png"
     _2x: "images/who-am-i/showcase1.png"
@@ -63,7 +63,7 @@ experience:
   button:
     icon: "icon-linkedin-fill"
     btnText: "LinkedIn"
-    URL: "https://www.linkedin.com/in/nicholasngtpm/"
+    URL: "https://www.linkedin.com/in/nicholasxng/"
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
