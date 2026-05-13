@@ -57,10 +57,12 @@
                         {{ end }}
                         
                         <div class="flex flex-wrap gap-2 {{ if not $showImpact }}w-full{{ end }} {{ if $showImpact }}ml-auto justify-end{{ end }}">
-                            {{ range .Params.tags | first 3 }}
-                            <span class="font-label-caps text-[10px] border {{ if eq $bgClass "bg-on-surface text-surface" }}border-surface/30{{ else }}border-on-surface/30{{ end }} px-2 py-0.5 uppercase">
-                                {{ . }}
-                            </span>
+                            {{ with .Params.tags }}
+                                {{ range first 3 . }}
+                                <span class="font-label-caps text-[10px] border {{ if eq $bgClass "bg-on-surface text-surface" }}border-surface/30{{ else }}border-on-surface/30{{ end }} px-2 py-0.5 uppercase">
+                                    {{ . }}
+                                </span>
+                                {{ end }}
                             {{ end }}
                         </div>
                     </div>
