@@ -7,11 +7,10 @@
   {{ partial "head_custom.html" . }}
 </head>
 
-<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased pt-24 selection:bg-primary-container selection:text-on-primary-container">
   {{ partial "header.html" . }}
 
-  <main class="pt-24 min-h-screen">
-    <!-- Render the original dynamic experience list -->
+  <main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-gap flex flex-col lg:flex-row gap-12 lg:gap-24">
     {{ partial "experience-list.html" . }}
   </main>
 
