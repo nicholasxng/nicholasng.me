@@ -2,8 +2,8 @@
     {{ $currentPage := . }}
     {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "experience") }}
     {{ range $xp }}
-    {{ $active := eq .Permalink $currentPage.Permalink }}
-    <a class="block p-4 border-l-4 {{ if $active }}border-on-surface bg-primary-container text-on-primary-container shadow-[4px_4px_0px_0px_rgba(28,27,27,1)] {{ else }}border-transparent hover:border-primary-container group{{ end }} transition-all cursor-pointer" href="{{ .Permalink }}">
+    {{ $active := eq .RelPermalink $currentPage.RelPermalink }}
+    <a class="block p-4 border-l-4 {{ if $active }}border-on-surface bg-primary-container text-on-primary-container shadow-[4px_4px_0px_0px_rgba(28,27,27,1)] {{ else }}border-transparent hover:border-primary-container group{{ end }} transition-all cursor-pointer" href="{{ .RelPermalink }}">
         <h3 class="font-headline-md text-headline-md {{ if not $active }}text-on-surface group-hover:text-primary{{ end }} transition-colors">{{ .Params.company | title }}</h3>
         <p class="font-label-caps text-label-caps {{ if not $active }}text-on-surface-variant{{ end }} mt-2 uppercase">{{ .Params.jobTitle }}</p>
     </a>
