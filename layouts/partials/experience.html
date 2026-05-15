@@ -36,7 +36,7 @@
                 <div class="{{ $colSpan }} bento-card p-stack-lg {{ $bgClass }} flex flex-col justify-between min-h-[320px] relative group transition-all duration-300 hover:-translate-y-1">
                     <div>
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-headline-md text-headline-md {{ $accentColor }}">{{ .Params.company | default .Title }}</h3>
+                            <h3 class="font-headline-md text-headline-md {{ $accentColor }} !normal-case">{{ .Params.company | default .Title }}</h3>
                             {{ if $icon }}
                             <span class="material-symbols-outlined text-4xl">{{ $icon }}</span>
                             {{ end }}
