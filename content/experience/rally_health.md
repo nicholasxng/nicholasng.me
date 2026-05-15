@@ -3,10 +3,11 @@ date: 2021-05-01T00:00:00+01:00
 draft: false
 title: "lead technical program manager"
 jobTitle: "lead technical program manager"
-company: "rally health"
+company: "Rally Health"
 location: "san francisco ca"
 duration: "2019-2021"
 weight: 2
+tags: ["Agile Methodologies", "DevOps", "Member Engagement"]
 ---
 ### Transforming Healthcare at Rally Health: Leading Through Innovation and Resilience
 

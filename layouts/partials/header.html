@@ -1,0 +1,67 @@
+<!-- TopNavBar -->
+<nav id="navbar" class="fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-sm border-b border-on-surface transition-all duration-300">
+    <a class="font-headline-md text-headline-md font-black tracking-tighter text-on-surface z-[110]" href="/">NICHOLAS NG</a>
+    
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-8 items-center">
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#about">ABOUT</a>
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/experience">EXPERIENCE</a>
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#education">EDUCATION</a>
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#contact">CONTACT</a>
+        <button class="hidden md:block bg-on-surface text-surface px-6 py-3 font-button text-button uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors border border-on-surface">
+            DOWNLOAD CV
+        </button>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="menu-toggle" class="md:hidden z-[110] flex flex-col gap-1.5 p-2" aria-label="Toggle Menu">
+        <span class="w-8 h-1 bg-on-surface transition-transform duration-300 origin-right"></span>
+        <span class="w-8 h-1 bg-on-surface transition-opacity duration-300"></span>
+        <span class="w-8 h-1 bg-on-surface transition-transform duration-300 origin-right"></span>
+    </button>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-primary-container z-[90] translate-x-full transition-transform duration-500 flex flex-col items-center justify-center p-gutter">
+    <div class="flex flex-col gap-8 text-center">
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/#about">ABOUT</a>
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/experience">EXPERIENCE</a>
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/#education">EDUCATION</a>
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/#contact">CONTACT</a>
+        
+
+    </div>
+</div>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.mobile-nav-link');
+    const spans = menuToggle.querySelectorAll('span');
+    let isOpen = false;
+
+    function toggleMenu() {
+        isOpen = !isOpen;
+        if (isOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+            spans[0].style.transform = 'rotate(-45deg) translate(-2px, 0px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(45deg) translate(-2px, 0px)';
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = '';
+        }
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (isOpen) toggleMenu();
+        });
+    });
+</script>

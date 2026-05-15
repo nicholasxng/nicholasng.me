@@ -3,10 +3,13 @@ date: 2021-05-01T00:00:00+01:00
 draft: false
 title: "staff technical program manager"
 jobTitle: "staff technical program manager"
-company: "box"
+company: "Box"
 location: "redwood city ca"
 duration: "2018-2019"
 weight: 1
+tags: ["Hardware Operations", "System Reliability", "Scalability"]
+#impact_value: "15%"
+#impact_label: "EFFICIENCY UP"
 ---
 ### Revamping Infrastructure: Pioneering Box.com's Hardware Engineering Revolution
 

@@ -1,62 +1,23 @@
-{{ if .Site.Data.homepage.showcase.enable }}
-<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
-  <div class="container">
-    <div class="row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h1 class="display-1">
-          {{ .Site.Data.homepage.showcase.title }}
-          <br />
-          <span
-            >{{ .Site.Data.homepage.showcase.subtitle }}</span
-          >
-        </h1>
-        <p class="lead">
-          {{ .Site.Data.homepage.showcase.description | safeHTML }}
-        </p>
-        <a
-          href="{{ .Site.Data.homepage.showcase.button.URL }}"
-          class="btn btn-primary"
-        >
-          <i class="{{ .Site.Data.homepage.showcase.button.icon }}"></i>
-          {{ .Site.Data.homepage.showcase.button.btnText }}
-        </a>
-      </div>
-<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image">
-
-  {{ $img := resources.Get .Site.Data.homepage.showcase.image.x }}
-  {{ $img2x := resources.Get .Site.Data.homepage.showcase.image._2x }}
-  {{ $imgWebp := $img.Resize (printf "%dx%d webp q75 Lanczos picture" $img.Width $img.Height) }}
-  {{ $img2xWebp := $img2x.Resize (printf "%dx%d webp q75 Lanczos picture" $img2x.Width $img2x.Height) }}
-
-  <picture>
-    {{/* WebP sources for modern browsers */}}
-    <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $img2xWebp.RelPermalink }} 2x" type="image/webp" />
-    {{/* PNG/JPEG fallback for browsers that don't support WebP */}}
-    <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/png">
-    <img
-      width="{{ $img.Width }}"
-      height="{{ $img.Height }}"
-      class="lozad img-responsive"
-      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
-      data-src="{{ $img.RelPermalink }}"
-      data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
-      alt="{{ .Site.Data.homepage.showcase.image.alt }}"
-    />
-  </picture>
-
-</div>
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col justify-center px-gutter border-b border-on-surface bg-surface">
+    <div class="max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-stack-lg items-center py-12">
+        <div class="lg:w-1/2">
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4 block">{{ .Site.Data.homepage.showcase.subtitle | upper | default "TECH PROGRAM MANAGER & LEADER" }}</span>
+            <h1 class="font-headline-xl text-headline-xl mb-stack-md leading-none">
+                {{ .Site.Data.homepage.showcase.title | default "hello, i'm nicholas i deliver things" }}
+            </h1>
+            <p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+                {{ .Site.Data.homepage.showcase.description | default "Specializing in bridge-building between engineering, product, and business goals. I transform complex roadmaps into high-impact delivery." }}
+            </p>
+        </div>
+        <div class="lg:w-1/2 flex justify-center lg:justify-end order-first lg:order-last">
+            <div class="w-full flex justify-center md:justify-end">
+                {{ $imagePath := .Site.Data.homepage.showcase.image.x | default "images/showcase/nick_delivery.png" }}
+                {{ $heroImg := resources.Get $imagePath }}
+                <img alt="Nicholas Ng professional portrait" 
+                     class="w-full max-w-[768px] h-auto object-contain block mx-auto md:mx-0" 
+                     src="{{ if $heroImg }}{{ $heroImg.RelPermalink }}{{ else }}{{ $imagePath | absURL }}{{ end }}"/>
+            </div>
+        </div>
     </div>
-    <div class="row platform-links">
-      <div class="col-12">
-        {{ range .Site.Data.homepage.showcase.socialLinks }}
-        <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="Visit Nicholas on {{ .icon | title }}">
-          <i class="icon-{{ .icon }}-line"></i>
-        </a>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-  
 </section>
-{{ end }}

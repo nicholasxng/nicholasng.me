@@ -4,23 +4,24 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode }}">
 
 <head>
 
     {{ partial "head.html" . }}
-
     {{ partial "head_custom.html" . }}
 
 </head>
 
-<body class="{{ if .IsHome }}home{{ end }}">
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container {{ if .IsHome }}home{{ end }}">
 
 	{{ partial "header.html" . }}
 
+    <main class="pt-24">
 	{{ range .Site.Params.sections }}
 	{{ partial . $ }}
 	{{ end }}
+    </main>
 
 	{{ partial "footer.html" . }}
     {{ partial "base-foot.html" . }}

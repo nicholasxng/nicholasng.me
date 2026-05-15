@@ -3,10 +3,11 @@ date: 2021-05-01T00:00:00+01:00
 draft: false
 title: "staff technical program manager"
 jobTitle: "staff technical program manager"
-company: "king games"
+company: "King Games"
 location: "san francisco ca"
 duration: "2021-2022"
 weight: 3
+tags: ["Agile Coaching", "Loyalty Programs", "Cross-functional Leadership"]
 ---
 ### King Games Levels Up: Leading the Charge in Player Loyalty and Engagement
 

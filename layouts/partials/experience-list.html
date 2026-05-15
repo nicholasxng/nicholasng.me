@@ -1,0 +1,31 @@
+<!-- Left Sidebar (Vertical Timeline/Tabs) -->
+{{ partial "experience-sidebar.html" . }}
+
+<!-- Right Content Area (Experience Summary) -->
+<section class="w-full lg:w-2/3 flex flex-col pt-8 md:pt-0">
+    <div class="mb-stack-lg relative inline-block">
+        <h1 class="font-headline-xl text-headline-xl text-on-surface uppercase mb-4 relative z-10">EXPERIENCE</h1>
+        <!-- Amber Accent Bar -->
+        <div class="w-full h-4 bg-primary-container absolute bottom-4 left-0 -z-10 translate-y-2"></div>
+    </div>
+    <div class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-stack-lg border-l-4 border-primary pl-6">
+        <p>
+            {{ if .Site.Data.homepage.experience.enable }}
+                {{ .Site.Data.homepage.experience.description | markdownify }}
+            {{ else }}
+                Over 20 years of experience working with companies across the US. I drive technical program delivery, platform modernization, and operational excellence across cross-functional teams.
+            {{ end }}
+        </p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 mb-section-gap">
+        <a href="https://linkedin.com/in/nicholasng" target="_blank" class="bg-on-surface text-surface px-8 py-4 font-button text-button hover:bg-primary-container hover:text-on-primary-container transition-colors border-2 border-on-surface flex items-center justify-center gap-2 group">
+            <span class="material-symbols-outlined">work</span>
+            LINKEDIN
+            <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="/resume.pdf" class="bg-surface text-on-surface px-8 py-4 font-button text-button hover:bg-surface-variant transition-colors border-2 border-on-surface flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined">download</span>
+            DOWNLOAD MY RESUME
+        </a>
+    </div>
+</section>

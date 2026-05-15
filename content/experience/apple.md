@@ -3,10 +3,11 @@ date: 2021-05-01T00:00:00+01:00
 draft: false
 title: "senior program manager"
 jobTitle: "senior program manager"
-company: "apple"
+company: "Apple"
 location: "cupertino ca"
 duration: "2022-2023"
 weight: 4
+tags: ["Infrastructure", "Stakeholder Management", "Leadership"]
 ---
 ### Revolutionizing Data Management at Apple: Streamlining Sales and Enhancing Global Collaboration
 
