@@ -10,7 +10,7 @@
                 {{ .Site.Data.homepage.showcase.description | default "Specializing in bridge-building between engineering, product, and business goals. I transform complex roadmaps into high-impact delivery." }}
             </p>
         </div>
-        <div class="lg:w-1/2 flex justify-center lg:justify-end">
+        <div class="lg:w-1/2 flex justify-center lg:justify-end order-first lg:order-last">
             <div class="w-full flex justify-center md:justify-end">
                 {{ $imagePath := .Site.Data.homepage.showcase.image.x | default "images/showcase/nick_delivery.png" }}
                 {{ $heroImg := resources.Get $imagePath }}
