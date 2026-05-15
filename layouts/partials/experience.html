@@ -1,75 +1,73 @@
-<!-- Experience Section (Bento Grid) -->
+<!-- Experience Section -->
 <section class="py-section-gap px-gutter" id="experience">
-    <div class="max-w-container-max mx-auto">
-        <div class="flex justify-between items-end mb-16">
-            <h2 class="font-headline-lg text-headline-lg">{{ .Site.Data.homepage.experience.title | default "EXPERIENCE" | upper }}</h2>
-            <a href="/experience" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 group">
-                VIEW ALL ROLES
-                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-            {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "experience") }}
-            
-            {{ range $index, $element := first 4 $xp }}
-                {{ $colSpan := "md:col-span-6" }}
-                {{ $bgClass := "bg-surface text-on-surface" }}
-                {{ $icon := "" }}
-                {{ $showImpact := false }}
-                
-                {{ if eq $index 0 }}
-                    {{ $colSpan = "md:col-span-8" }}
-                    {{ $bgClass = "bg-surface text-on-surface" }}
-                {{ else if eq $index 1 }}
-                    {{ $colSpan = "md:col-span-4" }}
-                    {{ $bgClass = "bg-primary-container text-on-primary-container" }}
-                {{ else if eq $index 2 }}
-                    {{ $colSpan = "md:col-span-5" }}
-                    {{ $bgClass = "bg-surface text-on-surface" }}
-                {{ else if eq $index 3 }}
-                    {{ $colSpan = "md:col-span-7" }}
-                    {{ $bgClass = "bg-on-surface text-surface" }}
-                    {{ $icon = "cloud_done" }}
-                    {{ $showImpact = true }}
-                {{ end }}
-
-                <div class="{{ $colSpan }} bento-card p-stack-lg {{ $bgClass }} flex flex-col justify-between min-h-[320px] group transition-all duration-300 hover:-translate-y-1">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-headline-md text-headline-md">{{ .Params.company | title }}</h3>
-                            {{ if $icon }}
-                            <span class="material-symbols-outlined text-4xl">{{ $icon }}</span>
-                            {{ end }}
-                        </div>
-                        <p class="font-body-md text-body-md opacity-90 italic mb-2">{{ .Params.jobTitle }}</p>
-                        <p class="font-body-lg text-body-lg mb-6 line-clamp-3">
-                            {{ .Summary | plainify | truncate 150 }}
-                        </p>
-                    </div>
-
-                    <div class="flex items-end justify-between">
-                        {{ if $showImpact }}
-                        <div class="flex flex-col">
-                            <span class="font-label-caps text-xs opacity-60">IMPACT</span>
-                            <span class="font-headline-md text-headline-md">15%</span>
-                            <span class="font-label-caps text-xs opacity-60">EFFICIENCY UP</span>
-                        </div>
-                        {{ end }}
-                        
-                        <div class="flex flex-wrap gap-2 {{ if not $showImpact }}w-full{{ end }} {{ if $showImpact }}ml-auto justify-end{{ end }}">
-                            {{ with .Params.tags }}
-                                {{ range first 3 . }}
-                                <span class="font-label-caps text-[10px] border {{ if eq $bgClass "bg-on-surface text-surface" }}border-surface/30{{ else }}border-on-surface/30{{ end }} px-2 py-0.5 uppercase">
-                                    {{ . }}
-                                </span>
-                                {{ end }}
-                            {{ end }}
-                        </div>
-                    </div>
-                    
-                    <a href="{{ .RelPermalink }}" class="absolute inset-0 z-10" aria-label="View {{ .Params.company }} experience"></a>
-                </div>
-            {{ end }}
-        </div>
-    </div>
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-lg text-headline-lg">EXPERIENCE</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant"><br/></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Apple -->
+<div class="md:col-span-8 bento-card p-stack-lg bg-surface flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md">Apple</h3>
+</div>
+<p class="font-body-lg text-body-lg mb-6">Leading technical programs across cross-functional teams to deliver seamless user experiences and robust infrastructure.</p>
+</div>
+<div class="flex flex-wrap gap-2"><span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Infrastructure</span>
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Stakeholder Management</span>
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Leadership</span></div>
+<a href="/experience/apple" class="absolute inset-0 z-10" aria-label="View Apple experience"></a>
+</div>
+<!-- King Games -->
+<div class="md:col-span-4 bento-card p-stack-lg bg-primary-container text-on-primary-container flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">King Games</h3>
+<p class="font-body-md text-body-md opacity-90 italic">Technical Program Manager</p>
+</div>
+<p class="font-body-md text-body-md">Optimized delivery pipelines for global gaming titles, managing millions of concurrent users.</p>
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Agile Coaching</span>
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Loyalty Programs</span>
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Cross-functional Leadership</span>
+</div>
+<a href="/experience/king-games" class="absolute inset-0 z-10" aria-label="View King Games experience"></a>
+</div>
+<!-- Rally Health -->
+<div class="md:col-span-5 bento-card p-stack-lg bg-surface flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2 text-primary">Rally Health</h3>
+<p class="font-body-md text-body-md">Spearheaded healthcare tech initiatives focusing on digital patient engagement and data security.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Agile Methodologies</span>
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">DevOps</span>
+<span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">Member Engagement</span>
+</div><div class="font-label-caps text-label-caps"><br/></div>
+<a href="/experience/rally-health" class="absolute inset-0 z-10" aria-label="View Rally Health experience"></a>
+</div>
+<!-- Box -->
+<div class="md:col-span-7 bento-card p-stack-lg bg-on-surface text-surface flex flex-col justify-between min-h-[320px]">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Box</h3>
+<p class="font-body-lg text-body-lg">Platform engineering coordination and enterprise cloud content management programs.</p>
+</div>
+<span class="material-symbols-outlined text-4xl">cloud_done</span>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="font-label-caps text-xs opacity-60">IMPACT</span>
+<span class="font-headline-md text-headline-md">15%</span>
+<span class="font-label-caps text-xs opacity-60">EFFICIENCY UP</span>
+</div>
+<div class="flex flex-wrap gap-2 items-end ml-auto">
+<span class="font-label-caps text-[10px] border border-surface/30 px-2 py-0.5 uppercase">Hardware Operations</span>
+<span class="font-label-caps text-[10px] border border-surface/30 px-2 py-0.5 uppercase">System Reliability</span>
+<span class="font-label-caps text-[10px] border border-surface/30 px-2 py-0.5 uppercase">Scalability</span>
+</div></div>
+<a href="/experience/box" class="absolute inset-0 z-10" aria-label="View Box experience"></a>
+</div>
+</div>
+</div>
 </section>
