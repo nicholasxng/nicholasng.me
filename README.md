@@ -2,15 +2,15 @@
 
 Welcome to the repository for my professional portfolio website, built with [Hugo](https://gohugo.io/). This site serves as a showcase of my career journey, technical skills, and professional contributions.
 
-## 🚀 Antigravity Redesign (In Progress)
+## ✨ Amber Tech Narrative Redesign
 
-This branch (`antigravity-redesign`) represents a significant visual and architectural overhaul of the site.
+This repository features a significant visual and architectural overhaul, implementing the **"Amber Tech Narrative"** design system (Wired aesthetic).
 
-### Key Changes
-- **Material 3-Inspired Design**: Implementing a modern, bento-style layout with a color palette and typography system based on Material Design 3 principles.
-- **Tailwind CSS Integration**: Transitioning to [Tailwind CSS](https://tailwindcss.com/) for more flexible and maintainable styling.
-- **Enhanced Experience Section**: A new dedicated `/experience` route featuring an interactive bento-box overview of my professional history.
-- **Dynamic Assets**: Updated hero images and refined UI components for a more "alive" and interactive feel.
+### Key Features
+- **Neo-Brutalist Bento Layout**: A modern, high-fidelity grid system for showcasing professional experience.
+- **Tailwind CSS Architecture**: A robust styling system built for performance and responsive flexibility.
+- **Editorial Typography**: Customized typography using the *Epilogue* font for a premium, tech-forward feel.
+- **Mobile-First Navigation**: Includes a custom Neo-Brutalist hamburger menu and optimized mobile viewport flow.
 
 ## 🛠 Tech Stack
 
@@ -24,7 +24,6 @@ This branch (`antigravity-redesign`) represents a significant visual and archite
 - `content/`: Markdown files for projects, experience, and site pages.
 - `layouts/`: Custom Hugo templates and partials for the redesign.
 - `assets/`: CSS, images, and static assets.
-- `google-stitch-redesign/`: Reference mocks and exported assets for the current redesign phase.
 
 ## 🧪 Testing
 
@@ -50,4 +49,4 @@ This project uses [Playwright](https://playwright.dev/) for End-to-End (E2E) tes
     *This opens the Playwright Test Runner UI for debugging and visual verification.*
 
 ---
-*Status: This branch is currently the active development area for the site's next major iteration.*
+*Status: Redesign complete. Active portfolio maintenance.*
