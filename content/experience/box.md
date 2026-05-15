@@ -7,6 +7,9 @@ company: "box"
 location: "redwood city ca"
 duration: "2018-2019"
 weight: 1
+tags: ["Hardware Operations", "System Reliability", "Scalability"]
+impact_value: "15%"
+impact_label: "EFFICIENCY UP"
 ---
 ### Revamping Infrastructure: Pioneering Box.com's Hardware Engineering Revolution
 

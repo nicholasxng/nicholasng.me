@@ -1,19 +1,23 @@
 <!-- Hero Section -->
 <section class="min-h-[80vh] flex flex-col justify-center px-gutter border-b border-on-surface bg-surface">
-<div class="max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-stack-lg items-center py-12">
-<div class="lg:w-1/2">
-<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4 block">TECH PROGRAM MANAGER &amp; LEADER</span>
-<h1 class="font-headline-xl text-headline-xl mb-stack-md leading-none">
-                    hello, i'm nicholas i deliver things
-                </h1>
-<p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
-                    Specializing in bridge-building between engineering, product, and business goals. I transform complex roadmaps into high-impact delivery.
-                </p>
-</div>
-<div class="lg:w-1/2 flex justify-center lg:justify-end">
-<div class="w-full flex justify-center md:justify-end">
-<img alt="Nicholas Ng professional portrait" class="w-[768px] h-[768px] object-contain block mx-auto md:mx-0" src="https://lh3.googleusercontent.com/aida/ADBb0ujaqNWLb0PYXYHpZdP1GKF42vOmwvhiMDw22-j2xarBiGOE5qNw179c11DY8r1DaeoSF63s9Xq_EUfSpmVm-mBEqtmwhFh8cQjFSc_tP9T2sh74ETSYvBQwvmVa9JppKRIb-CrWdgkykVQvX6oq-wP3zogNkd-pdpT3cFyAEaAiAN-eOgvr0DPVp1XWCTL7tyHyfSFJR0pwWpvws-SW_Vn9otHfR4cgcMOQ5vLtZpi21iE6fUAIbAfJrj2rjuc7eJ0SLaqsbWyYWw"/>
-</div>
-</div>
-</div>
+    <div class="max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-stack-lg items-center py-12">
+        <div class="lg:w-1/2">
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4 block">{{ .Site.Data.homepage.showcase.subtitle | upper | default "TECH PROGRAM MANAGER & LEADER" }}</span>
+            <h1 class="font-headline-xl text-headline-xl mb-stack-md leading-none">
+                {{ .Site.Data.homepage.showcase.title | default "hello, i'm nicholas i deliver things" }}
+            </h1>
+            <p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+                {{ .Site.Data.homepage.showcase.description | default "Specializing in bridge-building between engineering, product, and business goals. I transform complex roadmaps into high-impact delivery." }}
+            </p>
+        </div>
+        <div class="lg:w-1/2 flex justify-center lg:justify-end">
+            <div class="w-full flex justify-center md:justify-end">
+                {{ $imagePath := .Site.Data.homepage.showcase.image.x | default "images/showcase/nick_delivery.png" }}
+                {{ $heroImg := resources.Get $imagePath }}
+                <img alt="Nicholas Ng professional portrait" 
+                     class="w-full max-w-[768px] h-auto object-contain block mx-auto md:mx-0" 
+                     src="{{ if $heroImg }}{{ $heroImg.RelPermalink }}{{ else }}{{ $imagePath | absURL }}{{ end }}"/>
+            </div>
+        </div>
+    </div>
 </section>
