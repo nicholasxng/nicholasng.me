@@ -50,9 +50,9 @@ education:
   enable: true
   title: "education"
   items:
-    - university: "university of california berkeley 💙🐻💛"
+    - university: "University of California Berkeley 🐻"
       year: ""
-      degree: "bachelor of arts - economics"
+      degree: "Bachelor of Arts - Economics"
 
 # experience
 experience:
