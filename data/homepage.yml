@@ -4,7 +4,7 @@ showcase:
   title: "Hello, I'm Nicholas"
   subtitle: "I deliver things"
   description: >
-    As a Technical Program Manager, I apply a straightforward approach: focus on People, Product, and Process. I lead teams through challenges with a clear focus on objectives, a unified strategic direction, and a commitment to iterative improvements, ensuring technical and operational excellence. My role is about more than managing — it's about driving transformative changes and achieving substantial results in the tech landscape.
+    As a Technical Program Manager, I apply a straightforward approach: focus on People, Product, and Process. I lead teams through challenges with a clear focus on objectives, a unified strategic [...]
   image:
     x: "images/showcase/nick_delivery.png"
     _2x: "images/showcase/nick_delivery.png"
@@ -29,13 +29,13 @@ about:
   title: "this is me"
   content: >
     <p class="lead">
-        As a tech leader, I thrive on tackling complex operational challenges head-on. Whether modernizing platforms with DevOps and cloud, rolling out innovative data solutions, or launching new products, I assemble cross-functional teams to determine the objective, define the outcomes, and produce solutions.
+        As a tech leader, I thrive on tackling complex operational challenges head-on. Whether modernizing platforms with DevOps and cloud, rolling out innovative data solutions, or launching new [...]
     </p>
      <p class="lead">
-        We follow lean principles and implement best practices to optimize architectures and accelerate cycle times. I foster an environment of continuous improvement, implementing constant team feedback and evolving processes to deliver value. My teams are empowered to resolve inefficiencies and achieve high-velocity performance.
+        We follow lean principles and implement best practices to optimize architectures and accelerate cycle times. I foster an environment of continuous improvement, implementing constant team f[...]
      </p>
      <p class="lead">
-        Those "a-ha" moments when we've leveled up our tech capabilities are incredibly energizing. Suddenly bottlenecks are resolved, insights are flowing, and we're fueling the business with reliable systems operating at scale. My enthusiasm lies in unlocking those performance wins and fostering an environment of acceleration. Let's amp up your technical engine together - I'll bring the passion for driving impactful change.
+        Those "a-ha" moments when we've leveled up our tech capabilities are incredibly energizing. Suddenly bottlenecks are resolved, insights are flowing, and we're fueling the business with rel[...]
      </p>
   button:
     icon: "icon-smile-fill"
@@ -69,18 +69,18 @@ experience:
     btnText: "Download My Resume"
     URL: "/files/Nicholas%20Ng.pdf"
 
-  items:
-    - title: "Sr. Title"
-      company: "Serious Business, Inc"
-      duration: "Feb 2011 - Sep 2019"
-
-    - title: "Sr. Title"
-      company: "Fancy Company, Inc"
-      duration: "Apr 2010 - Jan 2011"
-
-    - title: "Jr. Title"
-      company: "Company, Inc"
-      duration: "Jun 2009 - Mar 2010"
+  # items:
+  #   - title: "Sr. Title"
+  #     company: "Serious Business, Inc"
+  #     duration: "Feb 2011 - Sep 2019"
+  #
+  #   - title: "Sr. Title"
+  #     company: "Fancy Company, Inc"
+  #     duration: "Apr 2010 - Jan 2011"
+  #
+  #   - title: "Jr. Title"
+  #     company: "Company, Inc"
+  #     duration: "Jun 2009 - Mar 2010"
 
 # client_and_work, testimonial sections disabled — placeholder data removed
 # Re-enable only when real content is ready
