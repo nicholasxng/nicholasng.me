@@ -3,11 +3,11 @@
     <div class="max-w-container-max mx-auto">
         <div class="flex justify-between items-end mb-16">
             <h2 class="font-headline-lg text-headline-lg">{{ .Site.Data.homepage.experience.title | upper | default "EXPERIENCE" }}</h2>
-            <a href="/experience" class="hidden md:flex font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors items-center gap-2 group">
-<!--
+<!--            <a href="/experience" class="hidden md:flex font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors items-center gap-2 group">
+
                 VIEW ALL ROLES
--->                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
+               <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a> --> 
         </div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
             {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "experience") }}
