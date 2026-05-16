@@ -67,7 +67,7 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
-    URL: "https://nicholasxng.github.io/nicholasng.me/files/Nicholas%20Ng%202024.pdf"
+    URL: "/files/Nicholas%20Ng.pdf"
 
   items:
     - title: "Sr. Title"

@@ -23,3 +23,6 @@ Thumbs.db
 # Testing
 playwright-report/
 test-results/
+
+.gemini/
+gha-creds-*.json
