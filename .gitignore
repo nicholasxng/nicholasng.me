@@ -26,3 +26,4 @@ test-results/
 
 .gemini/
 gha-creds-*.json
+nicholasng.me.code-workspace
