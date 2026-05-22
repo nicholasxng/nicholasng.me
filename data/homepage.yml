@@ -69,19 +69,6 @@ experience:
     btnText: "Download My Resume"
     URL: "/files/Nicholas%20Ng.pdf"
 
-  items:
-    - title: "Sr. Title"
-      company: "Serious Business, Inc"
-      duration: "Feb 2011 - Sep 2019"
-
-    - title: "Sr. Title"
-      company: "Fancy Company, Inc"
-      duration: "Apr 2010 - Jan 2011"
-
-    - title: "Jr. Title"
-      company: "Company, Inc"
-      duration: "Jun 2009 - Mar 2010"
-
 # client_and_work, testimonial sections disabled — placeholder data removed
 # Re-enable only when real content is ready
 client_and_work:
