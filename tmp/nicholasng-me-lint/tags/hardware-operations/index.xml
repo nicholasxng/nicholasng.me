@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware Operations on </title>
+    <link>https://www.nicholasng.me/tags/hardware-operations/</link>
+    <description>Recent content in Hardware Operations on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://www.nicholasng.me/tags/hardware-operations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>staff technical program manager</title>
+      <link>https://www.nicholasng.me/experience/box/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0100</pubDate>
+      <guid>https://www.nicholasng.me/experience/box/</guid>
+      <description>&lt;h3 id=&#34;revamping-infrastructure-pioneering-boxcoms-hardware-engineering-revolution&#34;&gt;Revamping Infrastructure: Pioneering Box.com&amp;rsquo;s Hardware Engineering Revolution&lt;/h3&gt;&#xA;&lt;p&gt;Facing significant challenges with decentralized hardware design and procurement processes, such as inconsistency, increased costs, and supply chain complications, my role at Box.com as a Hardware Engineering TPM was pivotal in transforming our infrastructure to support expansive cloud storage services. I led the strategic centralization of hardware operations, unifying over 30 hardware configurations across 50 platforms, which enhanced system reliability and scalability, preparing Box for future growth.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

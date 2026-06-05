@@ -8,6 +8,7 @@ location: "cupertino ca"
 duration: "2022-2023"
 weight: 4
 tags: ["Infrastructure", "Stakeholder Management", "Leadership"]
+cardColSpan: "md:col-span-8"
 ---
 ### Revolutionizing Data Management at Apple: Streamlining Sales and Enhancing Global Collaboration
 

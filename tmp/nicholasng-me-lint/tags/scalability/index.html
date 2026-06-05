@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="theme-color" content="#478079" >
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+<link rel="preconnect" href="https://www.googletagmanager.com">
+
+
+<title></title>
+<meta name="description" content="">
+
+
+
+<meta property="og:url" content="https://www.nicholasng.me/tags/scalability/">
+  <meta property="og:title" content="Scalability">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Scalability">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-000000"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GTM-000000');
+</script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Space+Grotesk:wght@600;700&family=Work+Sans:wght@400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="/css/tailwind.min.790062f81f3e64c650e7e53a78bbb8c8cb20d2a66dc91bede68cfc812570b1c5.css" integrity="sha256-eQBi&#43;B8&#43;ZMZQ5&#43;U6eLu4yMsg0qZtyRvt5oz8gSVwscU="/>
+
+</head>
+<body>
+  
+<nav id="navbar" class="fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-sm border-b border-on-surface transition-all duration-300">
+    <a class="font-headline-md text-headline-md font-black tracking-tighter text-on-surface z-[110]" href="/">NICHOLAS NG</a>
+    
+    <div class="hidden md:flex gap-8 items-center">
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#about">About</a>
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/experience">Experience</a>
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#education">Education</a>
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#contact">Contact</a>
+        
+        <a href="/files/Nicholas%20Ng.pdf" class="hidden md:block bg-on-surface text-surface px-6 py-3 font-button text-button uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors border border-on-surface">
+            DOWNLOAD CV
+        </a>
+    </div>
+
+    
+    <button id="menu-toggle" class="md:hidden z-[110] flex flex-col gap-1.5 p-2" aria-label="Toggle Menu">
+        <span class="w-8 h-1 bg-on-surface transition-transform duration-300 origin-right"></span>
+        <span class="w-8 h-1 bg-on-surface transition-opacity duration-300"></span>
+        <span class="w-8 h-1 bg-on-surface transition-transform duration-300 origin-right"></span>
+    </button>
+</nav>
+
+
+<div id="mobile-menu" class="fixed inset-0 bg-primary-container z-[90] translate-x-full transition-transform duration-500 flex flex-col items-center justify-center p-gutter">
+    <div class="flex flex-col gap-8 text-center">
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/#about">About</a>
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/experience">Experience</a>
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/#education">Education</a>
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/#contact">Contact</a>
+        
+    </div>
+</div>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.mobile-nav-link');
+    const spans = menuToggle.querySelectorAll('span');
+    let isOpen = false;
+
+    function toggleMenu() {
+        isOpen = !isOpen;
+        if (isOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+            spans[0].style.transform = 'rotate(-45deg) translate(-2px, 0px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(45deg) translate(-2px, 0px)';
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = '';
+        }
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (isOpen) toggleMenu();
+        });
+    });
+</script>
+
+  <main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-gap">
+    <h1 class="font-headline-xl text-headline-xl mb-stack-md">Scalability</h1>
+    <ul class="font-body-lg text-body-lg space-y-4">
+      
+      <li><a class="text-primary hover:underline hover:text-on-primary-container" href="/experience/box/">staff technical program manager</a></li>
+      
+    </ul>
+  </main>
+  
+<footer class="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md bg-on-surface text-surface-variant border-t-4 border-on-surface">
+<a class="font-headline-md text-headline-md font-bold text-surface" href="/">NICHOLAS NG</a>
+        <div class="font-label-caps text-label-caps text-center md:text-left">
+            © 2026 NICHOLAS NG — TPM &amp; LEADER
+        </div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">GITHUB</a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">EMAIL</a>
+</div>
+</footer>
+
+  
+
+</body>
+</html>

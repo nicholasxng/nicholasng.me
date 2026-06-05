@@ -2,12 +2,10 @@
 <nav id="navbar" class="fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-sm border-b border-on-surface transition-all duration-300">
     <a class="font-headline-md text-headline-md font-black tracking-tighter text-on-surface z-[110]" href="/">NICHOLAS NG</a>
     
-    <!-- Desktop Menu -->
     <div class="hidden md:flex gap-8 items-center">
-        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#about">ABOUT</a>
-        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/experience">EXPERIENCE</a>
-        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#education">EDUCATION</a>
-        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#contact">CONTACT</a>
+        {{ range .Site.Menus.header }}
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
         <a href="/files/Nicholas%20Ng.pdf" class="hidden md:block bg-on-surface text-surface px-6 py-3 font-button text-button uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors border border-on-surface">
             DOWNLOAD CV
         </a>
@@ -24,12 +22,9 @@
 <!-- Mobile Menu Overlay -->
 <div id="mobile-menu" class="fixed inset-0 bg-primary-container z-[90] translate-x-full transition-transform duration-500 flex flex-col items-center justify-center p-gutter">
     <div class="flex flex-col gap-8 text-center">
-        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/#about">ABOUT</a>
-        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/experience">EXPERIENCE</a>
-        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/#education">EDUCATION</a>
-        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic" href="/#contact">CONTACT</a>
-        
-
+        {{ range .Site.Menus.header }}
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
     </div>
 </div>
 
