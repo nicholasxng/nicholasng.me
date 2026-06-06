@@ -8,6 +8,8 @@ location: "san francisco ca"
 duration: "2019-2021"
 weight: 2
 tags: ["Agile Methodologies", "DevOps", "Member Engagement"]
+cardColSpan: "md:col-span-5"
+cardAccentColor: "text-primary"
 ---
 ### Transforming Healthcare at Rally Health: Leading Through Innovation and Resilience
 

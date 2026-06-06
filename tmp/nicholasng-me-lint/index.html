@@ -1,0 +1,503 @@
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.147.3">
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="theme-color" content="#478079" >
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+<link rel="preconnect" href="https://www.googletagmanager.com">
+
+
+<title></title>
+<meta name="description" content="">
+
+
+
+<meta property="og:url" content="https://www.nicholasng.me/">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-000000"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GTM-000000');
+</script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Space+Grotesk:wght@600;700&family=Work+Sans:wght@400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="/css/tailwind.min.790062f81f3e64c650e7e53a78bbb8c8cb20d2a66dc91bede68cfc812570b1c5.css" integrity="sha256-eQBi&#43;B8&#43;ZMZQ5&#43;U6eLu4yMsg0qZtyRvt5oz8gSVwscU="/>
+
+
+</head>
+
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container home">
+
+	
+<nav id="navbar" class="fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-sm border-b border-on-surface transition-all duration-300">
+    <a class="font-headline-md text-headline-md font-black tracking-tighter text-on-surface z-[110]" href="/">NICHOLAS NG</a>
+    
+    <div class="hidden md:flex gap-8 items-center">
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#about">About</a>
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/experience">Experience</a>
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#education">Education</a>
+        
+        <a class="font-label-caps text-label-caps uppercase text-on-surface hover:text-primary transition-colors" href="/#contact">Contact</a>
+        
+        <a href="/files/Nicholas%20Ng.pdf" class="hidden md:block bg-on-surface text-surface px-6 py-3 font-button text-button uppercase hover:bg-primary-container hover:text-on-primary-container transition-colors border border-on-surface">
+            DOWNLOAD CV
+        </a>
+    </div>
+
+    
+    <button id="menu-toggle" class="md:hidden z-[110] flex flex-col gap-1.5 p-2" aria-label="Toggle Menu">
+        <span class="w-8 h-1 bg-on-surface transition-transform duration-300 origin-right"></span>
+        <span class="w-8 h-1 bg-on-surface transition-opacity duration-300"></span>
+        <span class="w-8 h-1 bg-on-surface transition-transform duration-300 origin-right"></span>
+    </button>
+</nav>
+
+
+<div id="mobile-menu" class="fixed inset-0 bg-primary-container z-[90] translate-x-full transition-transform duration-500 flex flex-col items-center justify-center p-gutter">
+    <div class="flex flex-col gap-8 text-center">
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/#about">About</a>
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/experience">Experience</a>
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/#education">Education</a>
+        
+        <a class="mobile-nav-link font-headline-xl text-headline-xl text-on-primary-container hover:italic uppercase" href="/#contact">Contact</a>
+        
+    </div>
+</div>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.mobile-nav-link');
+    const spans = menuToggle.querySelectorAll('span');
+    let isOpen = false;
+
+    function toggleMenu() {
+        isOpen = !isOpen;
+        if (isOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+            spans[0].style.transform = 'rotate(-45deg) translate(-2px, 0px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(45deg) translate(-2px, 0px)';
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = '';
+        }
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (isOpen) toggleMenu();
+        });
+    });
+</script>
+
+
+    <main class="pt-24">
+	
+	
+<section class="min-h-[80vh] flex flex-col justify-center px-gutter border-b border-on-surface bg-surface">
+    <div class="max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-stack-lg items-center py-12">
+        <div class="lg:w-1/2">
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4 block">I DELIVER THINGS</span>
+            <h1 class="font-headline-xl text-headline-xl mb-stack-md leading-none">
+                Hello, I&#39;m Nicholas
+            </h1>
+            <p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+                As a Technical Program Manager, I apply a straightforward approach: focus on People, Product, and Process. I lead teams through challenges with a clear focus on objectives, a unified strategic direction, and a commitment to iterative improvements, ensuring technical and operational excellence. My role is about more than managing — it&#39;s about driving transformative changes and achieving substantial results in the tech landscape.
+
+            </p>
+        </div>
+        <div class="lg:w-1/2 flex justify-center lg:justify-end order-first lg:order-last">
+            <div class="w-full flex justify-center md:justify-end">
+                
+                
+                <img alt="Nicholas Ng professional portrait" 
+                     class="w-full max-w-[768px] h-auto object-contain block mx-auto md:mx-0" 
+                     src="/images/showcase/nick_delivery.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+	
+	
+<section class="py-12 md:py-section-gap px-gutter bg-on-surface text-surface" id="about">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center">
+        <div class="md:col-span-5">
+            <h2 class="font-headline-lg text-headline-lg mb-stack-md">THIS IS ME</h2>
+            <div class="w-16 h-1 bg-primary-container mb-stack-md"></div>
+        </div>
+        <div class="md:col-span-7">
+            <div class="font-body-lg text-body-lg leading-relaxed opacity-90 about-content">
+                <p class="lead">
+    As a tech leader, I thrive on tackling complex operational challenges head-on. Whether modernizing platforms with DevOps and cloud, rolling out innovative data solutions, or launching new products, I assemble cross-functional teams to determine the objective, define the outcomes, and produce solutions.
+</p>
+ <p class="lead">
+    We follow lean principles and implement best practices to optimize architectures and accelerate cycle times. I foster an environment of continuous improvement, implementing constant team feedback and evolving processes to deliver value. My teams are empowered to resolve inefficiencies and achieve high-velocity performance.
+ </p>
+ <p class="lead">
+    Those "a-ha" moments when we've leveled up our tech capabilities are incredibly energizing. Suddenly bottlenecks are resolved, insights are flowing, and we're fueling the business with reliable systems operating at scale. My enthusiasm lies in unlocking those performance wins and fostering an environment of acceleration. Let's amp up your technical engine together - I'll bring the passion for driving impactful change.
+ </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+</style>
+
+	
+	
+<section class="pt-12 pb-6 md:pt-[6rem] md:pb-[3rem] px-gutter bg-surface-container" id="education">
+    <div class="max-w-[960px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[2.25rem] items-start border-t-[3px] border-on-surface pt-9">
+            <div>
+                <h2 class="font-headline-lg text-[2.25rem] mb-[1.125rem] leading-[1.2] tracking-tight">EDUCATION</h2>
+            </div>
+            <div class="space-y-8">
+                
+                <div>
+                    <h3 class="font-headline-md text-[1.5rem] leading-[1.3] text-primary">University of California Berkeley 🐻</h3>
+                    <p class="font-body-lg text-[0.9375rem] leading-[1.6] mt-1.5">Bachelor of Arts - Economics</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+	
+	
+<section class="pt-6 pb-6 md:pt-[4rem] md:pb-[4rem] px-gutter" id="experience">
+    <div class="max-w-container-max mx-auto">
+        <div class="flex justify-between items-end mb-16">
+            <h2 class="font-headline-lg text-headline-lg">EXPERIENCE</h2>
+ 
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+            
+            
+            
+                
+                
+                
+                
+                
+
+                <div class="md:col-span-8 bento-card p-stack-lg bg-surface text-on-surface flex flex-col justify-between min-h-[320px] relative group transition-all duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-md text-headline-md  !normal-case">Apple</h3>
+                            
+                        </div>
+                        
+                        <p class="font-body-md text-body-md opacity-90 italic mb-2">senior program manager</p>
+                        
+                        <p class="font-body-lg text-body-lg mb-6 line-clamp-3">
+                            
+                                Revolutionizing Data Management at Apple: Streamlining Sales and Enhancing Global Collaboration Facing significant challenges in data integration and …
+                            
+                        </p>
+                    </div>
+
+                    <div class="flex items-end justify-between">
+                        
+                        
+                        <div class="flex flex-wrap gap-2 w-full ">
+                            
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Infrastructure
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Stakeholder Management
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Leadership
+                                </span>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <a href="/experience/apple/" class="absolute inset-0 z-10" aria-label="View Apple experience"></a>
+                </div>
+            
+                
+                
+                
+                
+                
+
+                <div class="md:col-span-4 bento-card p-stack-lg bg-primary-container text-on-primary-container flex flex-col justify-between min-h-[320px] relative group transition-all duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-md text-headline-md  !normal-case">King Games</h3>
+                            
+                        </div>
+                        
+                        <p class="font-body-md text-body-md opacity-90 italic mb-2">staff technical program manager</p>
+                        
+                        <p class="font-body-lg text-body-lg mb-6 line-clamp-3">
+                            
+                                King Games Levels Up: Leading the Charge in Player Loyalty and Engagement Leading the launch of King Games&rsquo; inaugural loyalty program, I focused …
+                            
+                        </p>
+                    </div>
+
+                    <div class="flex items-end justify-between">
+                        
+                        
+                        <div class="flex flex-wrap gap-2 w-full ">
+                            
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Agile Coaching
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Loyalty Programs
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Cross-functional Leadership
+                                </span>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <a href="/experience/king_games/" class="absolute inset-0 z-10" aria-label="View King Games experience"></a>
+                </div>
+            
+                
+                
+                
+                
+                
+
+                <div class="md:col-span-5 bento-card p-stack-lg bg-surface text-on-surface flex flex-col justify-between min-h-[320px] relative group transition-all duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-md text-headline-md text-primary !normal-case">Rally Health</h3>
+                            
+                        </div>
+                        
+                        <p class="font-body-md text-body-md opacity-90 italic mb-2">lead technical program manager</p>
+                        
+                        <p class="font-body-lg text-body-lg mb-6 line-clamp-3">
+                            
+                                Transforming Healthcare at Rally Health: Leading Through Innovation and Resilience At Rally Health, my tenure was marked by transformative challenges …
+                            
+                        </p>
+                    </div>
+
+                    <div class="flex items-end justify-between">
+                        
+                        
+                        <div class="flex flex-wrap gap-2 w-full ">
+                            
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Agile Methodologies
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    DevOps
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-on-surface/30 px-2 py-0.5 uppercase">
+                                    Member Engagement
+                                </span>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <a href="/experience/rally_health/" class="absolute inset-0 z-10" aria-label="View Rally Health experience"></a>
+                </div>
+            
+                
+                
+                
+                
+                
+
+                <div class="md:col-span-7 bento-card p-stack-lg bg-on-surface text-surface flex flex-col justify-between min-h-[320px] relative group transition-all duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-md text-headline-md  !normal-case">Box</h3>
+                            
+                            <span class="material-symbols-outlined text-4xl">cloud_done</span>
+                            
+                        </div>
+                        
+                        <p class="font-body-md text-body-md opacity-90 italic mb-2">staff technical program manager</p>
+                        
+                        <p class="font-body-lg text-body-lg mb-6 line-clamp-3">
+                            
+                                Revamping Infrastructure: Pioneering Box.com&rsquo;s Hardware Engineering Revolution Facing significant challenges with decentralized hardware design …
+                            
+                        </p>
+                    </div>
+
+                    <div class="flex items-end justify-between">
+                        
+                        <div class="flex flex-col">
+                            <span class="font-label-caps text-xs opacity-60">IMPACT</span>
+                            <span class="font-headline-md text-headline-md">15%</span>
+                            <span class="font-label-caps text-xs opacity-60">EFFICIENCY UP</span>
+                        </div>
+                        
+                        
+                        <div class="flex flex-wrap gap-2  ml-auto justify-end">
+                            
+                                
+                                <span class="font-label-caps text-[10px] border border-surface/30 px-2 py-0.5 uppercase">
+                                    Hardware Operations
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-surface/30 px-2 py-0.5 uppercase">
+                                    System Reliability
+                                </span>
+                                
+                                <span class="font-label-caps text-[10px] border border-surface/30 px-2 py-0.5 uppercase">
+                                    Scalability
+                                </span>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <a href="/experience/box/" class="absolute inset-0 z-10" aria-label="View Box experience"></a>
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+	
+	
+<section class="pt-6 pb-12 md:pt-[3rem] md:pb-[6rem] px-gutter bg-surface" id="contact">
+    <div class="max-w-[960px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-[2.25rem]">
+            <div class="md:col-span-5">
+                <h2 class="font-headline-lg text-[2.25rem] mb-[1.125rem] leading-[1.2] tracking-tight">CONTACT</h2>
+                <p class="font-body-lg text-[0.9375rem] leading-[1.6] mb-6">Looking for a leader who can navigate the complex terrain of modern software delivery? Drop me a message.</p>
+                <div class="space-y-4.5">
+                    
+                    <div class="flex items-center gap-3 group">
+                        <span class="material-symbols-outlined p-3 border border-on-surface group-hover:bg-primary-container transition-colors text-[18px]">mail</span>
+                        <span class="font-label-caps text-[0.656rem] tracking-[0.1em]"><a href="mailto:nicholas@nicholasng.me">nicholas.at.nicholasng.dot.me</a></span>
+                    </div>
+                    
+                    
+                    <a class="flex items-center gap-3 group" href="https://www.linkedin.com/in/nicholasxng" target="_blank">
+                        <span class="material-symbols-outlined p-3 border border-on-surface group-hover:bg-primary-container transition-colors text-[18px]">
+                            work
+                        </span>
+                        <span class="font-label-caps text-[0.656rem] tracking-[0.1em]">LINKEDIN PROFILE</span>
+                    </a>
+                    
+                    <a class="flex items-center gap-3 group" href="https://github.com/nicholasxng" target="_blank">
+                        <span class="material-symbols-outlined p-3 border border-on-surface group-hover:bg-primary-container transition-colors text-[18px]">
+                            code
+                        </span>
+                        <span class="font-label-caps text-[0.656rem] tracking-[0.1em]">GITHUB PROFILE</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="md:col-span-7 bg-surface p-[2.25rem] border-[1.5px] border-on-surface">
+                <form class="space-y-[1.125rem]" action="https://formspree.io/f/mleqvgbz" method="POST">
+                    <div>
+                        <label class="font-label-caps text-[0.656rem] uppercase block mb-1.5">Full Name</label>
+                        <input name="name" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none text-[0.75rem]" type="text" required/>
+                    </div>
+                    <div>
+                        <label class="font-label-caps text-[0.656rem] uppercase block mb-1.5">Email Address</label>
+                        <input name="email" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none text-[0.75rem]" type="email" required/>
+                    </div>
+                    <div>
+                        <label class="font-label-caps text-[0.656rem] uppercase block mb-1.5">Type Your Message Here</label>
+                        <textarea name="message" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none resize-none text-[0.75rem]" rows="3" required></textarea>
+                    </div>
+                    <button class="bg-on-surface text-surface w-full py-4 font-button text-[0.75rem] uppercase hover:bg-primary-container hover:text-on-primary-container transition-all flex justify-between items-center px-6 group" type="submit">
+                        SEND MESSAGE
+                        <span class="material-symbols-outlined group-hover:translate-x-1.5 transition-transform text-[18px]">arrow_forward</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+	
+    </main>
+
+	
+<footer class="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md bg-on-surface text-surface-variant border-t-4 border-on-surface">
+<a class="font-headline-md text-headline-md font-bold text-surface" href="/">NICHOLAS NG</a>
+        <div class="font-label-caps text-label-caps text-center md:text-left">
+            © 2026 NICHOLAS NG — TPM &amp; LEADER
+        </div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">GITHUB</a>
+<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">EMAIL</a>
+</div>
+</footer>
+
+    
+
+</body>
+
+</html>

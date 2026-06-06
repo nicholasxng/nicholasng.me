@@ -8,6 +8,8 @@ location: "san francisco ca"
 duration: "2021-2022"
 weight: 3
 tags: ["Agile Coaching", "Loyalty Programs", "Cross-functional Leadership"]
+cardColSpan: "md:col-span-4"
+cardBgClass: "bg-primary-container text-on-primary-container"
 ---
 ### King Games Levels Up: Leading the Charge in Player Loyalty and Engagement
 

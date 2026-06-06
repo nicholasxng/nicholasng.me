@@ -8,6 +8,10 @@ location: "redwood city ca"
 duration: "2018-2019"
 weight: 1
 tags: ["Hardware Operations", "System Reliability", "Scalability"]
+cardColSpan: "md:col-span-7"
+cardBgClass: "bg-on-surface text-surface"
+cardIcon: "cloud_done"
+showImpact: true
 #impact_value: "15%"
 #impact_label: "EFFICIENCY UP"
 ---

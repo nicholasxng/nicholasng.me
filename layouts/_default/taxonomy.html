@@ -6,20 +6,14 @@
 </head>
 <body>
   {{ partial "header.html" . }}
-  <section class="section section--border-bottom rad-animation-group">
-    <div class="container">
-      <div class="row rad-fade-down">
-        <div class="col-12">
-          <h1>{{ .Title }}</h1>
-          <ul>
-            {{ range .Pages }}
-            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-gap">
+    <h1 class="font-headline-xl text-headline-xl mb-stack-md">{{ .Title }}</h1>
+    <ul class="font-body-lg text-body-lg space-y-4">
+      {{ range .Pages }}
+      <li><a class="text-primary hover:underline hover:text-on-primary-container" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </main>
   {{ partial "footer.html" . }}
   {{ partial "base-foot.html" . }}
 </body>
