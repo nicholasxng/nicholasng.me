@@ -67,3 +67,8 @@ theme = "adritian-free-hugo-theme"
   [params.footer]
       # TODO: Update copyright text
       copyright = "© Nicholas Ng"
+      
+  [params.social]
+      linkedin = "https://www.linkedin.com/in/nicholasng"
+      github = "https://github.com/nicholasxng"
+      email = "mailto:hello@nicholasng.me"

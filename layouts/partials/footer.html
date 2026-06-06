@@ -5,8 +5,8 @@
             © {{ now.Year }} NICHOLAS NG — TPM &amp; LEADER
         </div>
 <div class="flex gap-8">
-<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">LINKEDIN</a>
-<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">GITHUB</a>
-<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="#">EMAIL</a>
+{{ with .Site.Params.social.linkedin }}<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="{{ . }}" target="_blank" rel="noopener noreferrer">LINKEDIN</a>{{ end }}
+{{ with .Site.Params.social.github }}<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="{{ . }}" target="_blank" rel="noopener noreferrer">GITHUB</a>{{ end }}
+{{ with .Site.Params.social.email }}<a class="font-label-caps text-label-caps text-surface-variant/70 hover:text-primary-fixed hover:underline decoration-2 underline-offset-4 transition-all" href="{{ . }}">EMAIL</a>{{ end }}
 </div>
 </footer>
