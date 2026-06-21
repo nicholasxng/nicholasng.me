@@ -13,7 +13,7 @@
                     </div>
                     {{ end }}
                     {{ range .Site.Data.homepage.showcase.socialLinks }}
-                    <a class="flex items-center gap-3 group" href="{{ .URL }}" target="_blank">
+                    <a class="flex items-center gap-3 group" href="{{ .URL }}" target="_blank" rel="noopener noreferrer">
                         <span class="material-symbols-outlined p-3 border border-on-surface group-hover:bg-primary-container transition-colors text-[18px]">
                             {{ if eq .icon "linkedin" }}work{{ else if eq .icon "github" }}code{{ else }}link{{ end }}
                         </span>
@@ -25,16 +25,16 @@
             <div class="md:col-span-7 bg-surface p-[2.25rem] border-[1.5px] border-on-surface">
                 <form class="space-y-[1.125rem]" action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
                     <div>
-                        <label class="font-label-caps text-[0.656rem] uppercase block mb-1.5">{{ .Site.Data.homepage.contact.form.full_name | default "FULL NAME" }}</label>
-                        <input name="name" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none text-[0.75rem]" type="text" required/>
+                        <label for="name" class="font-label-caps text-[0.656rem] uppercase block mb-1.5">{{ .Site.Data.homepage.contact.form.full_name | default "FULL NAME" }}</label>
+                        <input id="name" name="name" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none text-[0.75rem]" type="text" required/>
                     </div>
                     <div>
-                        <label class="font-label-caps text-[0.656rem] uppercase block mb-1.5">{{ .Site.Data.homepage.contact.form.email | default "EMAIL ADDRESS" }}</label>
-                        <input name="email" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none text-[0.75rem]" type="email" required/>
+                        <label for="email" class="font-label-caps text-[0.656rem] uppercase block mb-1.5">{{ .Site.Data.homepage.contact.form.email | default "EMAIL ADDRESS" }}</label>
+                        <input id="email" name="email" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none text-[0.75rem]" type="email" required/>
                     </div>
                     <div>
-                        <label class="font-label-caps text-[0.656rem] uppercase block mb-1.5">{{ .Site.Data.homepage.contact.form.message | default "MESSAGE" }}</label>
-                        <textarea name="message" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none resize-none text-[0.75rem]" rows="3" required></textarea>
+                        <label for="message" class="font-label-caps text-[0.656rem] uppercase block mb-1.5">{{ .Site.Data.homepage.contact.form.message | default "MESSAGE" }}</label>
+                        <textarea id="message" name="message" class="w-full bg-transparent border-b-[1.5px] border-on-surface focus:border-primary transition-colors py-1.5 outline-none resize-none text-[0.75rem]" rows="3" required></textarea>
                     </div>
                     <button class="bg-on-surface text-surface w-full py-4 font-button text-[0.75rem] uppercase hover:bg-primary-container hover:text-on-primary-container transition-all flex justify-between items-center px-6 group" type="submit">
                         {{ .Site.Data.homepage.contact.button.btnText | default "SEND MESSAGE" | upper }}
