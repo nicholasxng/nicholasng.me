@@ -108,4 +108,74 @@
   .bento-card:hover {
     background-color: theme('colors.primary-container');
   }
+
+  /* ── Welcome-back glow ring (refined for agency UI standards) ── */
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes rotate-angle {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  .glow-ring {
+    position: relative;
+    padding: 2px;
+    border-radius: 9999px; /* Pill / rounded badge style */
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Crisp rotating ring */
+  .glow-ring::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: conic-gradient(
+      from var(--angle),
+      transparent 55deg,
+      var(--color-primary) 95deg,
+      transparent 135deg
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: rotate-angle 8s linear infinite;
+  }
+
+  /* Soft blurred halo — lighter in light mode, fuller in dark mode */
+  .glow-ring::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: inherit;
+    background: conic-gradient(
+      from var(--angle),
+      transparent 55deg,
+      var(--color-primary) 95deg,
+      transparent 135deg
+    );
+    filter: blur(8px);
+    opacity: 0.2;
+    pointer-events: none;
+    animation: rotate-angle 8s linear infinite;
+    transition: opacity 0.3s ease;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .glow-ring::before {
+      opacity: 0.45;
+      inset: -8px;
+      filter: blur(10px);
+    }
+  }
 }
+
