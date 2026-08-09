@@ -105,14 +105,22 @@
     position: relative;
     border: 1px solid theme('colors.on-surface');
     transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+  /* Ensure card contents stay on top of glow effects */
+  .bento-card > * {
+    position: relative;
+    z-index: 2;
   }
   
   /* Right-angled rotating glow border on hover & focus */
   .bento-card::after {
     content: '';
     position: absolute;
-    inset: -1px;
+    inset: -2px;
     padding: 2px;
+    z-index: 1;
     background: conic-gradient(
       from var(--angle),
       transparent 55deg,
@@ -129,17 +137,19 @@
     transition: opacity 0.3s ease;
   }
 
+  /* Halo glow strictly behind card background */
   .bento-card::before {
     content: '';
     position: absolute;
-    inset: -6px;
+    inset: -10px;
+    z-index: -1;
     background: conic-gradient(
       from var(--angle),
       transparent 55deg,
       var(--color-primary) 95deg,
       transparent 135deg
     );
-    filter: blur(10px);
+    filter: blur(12px);
     opacity: 0;
     pointer-events: none;
     animation: rotate-angle 6s linear infinite;
@@ -153,7 +163,7 @@
 
   .bento-card:hover::before,
   .bento-card:focus-within::before {
-    opacity: 0.35;
+    opacity: 0.45;
   }
 
   /* ── Welcome-back glow ring (refined for agency UI standards) ── */
@@ -175,6 +185,12 @@
     border-radius: 9999px; /* Pill / rounded badge style */
     display: inline-flex;
     align-items: center;
+    z-index: 1;
+  }
+
+  .glow-ring > * {
+    position: relative;
+    z-index: 2;
   }
 
   /* Crisp rotating ring */
@@ -184,6 +200,7 @@
     inset: 0;
     border-radius: inherit;
     padding: 2px;
+    z-index: 1;
     background: conic-gradient(
       from var(--angle),
       transparent 55deg,
@@ -198,12 +215,13 @@
     animation: rotate-angle 8s linear infinite;
   }
 
-  /* Soft blurred halo — lighter in light mode, fuller in dark mode */
+  /* Soft blurred halo behind element */
   .glow-ring::before {
     content: '';
     position: absolute;
     inset: -6px;
     border-radius: inherit;
+    z-index: -1;
     background: conic-gradient(
       from var(--angle),
       transparent 55deg,
