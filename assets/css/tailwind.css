@@ -178,5 +178,44 @@
     animation: rotate-angle 8s linear infinite;
     filter: drop-shadow(0 0 6px var(--color-primary));
   }
+
+  /* ── 🚀 SUPER GIGGLES MODE: Glow ring around EVERYTHING on hover ── */
+  a:not(#mobile-menu a),
+  button,
+  .bento-card,
+  img,
+  input,
+  header,
+  span.font-label-caps {
+    position: relative;
+  }
+
+  a:not(#mobile-menu a):hover::after,
+  button:hover::after,
+  .bento-card:hover::after,
+  img:hover::after,
+  input:hover::after,
+  span.font-label-caps:hover::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    padding: 2px;
+    border-radius: inherit;
+    z-index: 50;
+    background: conic-gradient(
+      from var(--angle),
+      transparent 55deg,
+      var(--color-primary) 95deg,
+      transparent 135deg
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: rotate-angle 4s linear infinite;
+    filter: drop-shadow(0 0 8px var(--color-primary));
+  }
 }
+
 
