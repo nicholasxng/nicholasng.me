@@ -2,7 +2,14 @@
 <section class="min-h-[80vh] flex flex-col justify-center px-gutter border-b border-on-surface bg-surface">
     <div class="max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-stack-lg items-center py-12">
         <div class="lg:w-1/2">
-            <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4 block">{{ .Site.Data.homepage.showcase.subtitle | upper | default "TECH PROGRAM MANAGER & LEADER" }}</span>
+            <div class="mb-6 inline-block">
+                <div class="glow-ring">
+                    <span class="bg-surface text-on-surface px-4 py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-widest text-xs flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        {{ .Site.Data.homepage.showcase.subtitle | upper | default "TECH PROGRAM MANAGER & LEADER" }}
+                    </span>
+                </div>
+            </div>
             <h1 class="font-headline-xl text-headline-xl mb-stack-md leading-none">
                 {{ .Site.Data.homepage.showcase.title | default "hello, i'm nicholas i deliver things" }}
             </h1>
