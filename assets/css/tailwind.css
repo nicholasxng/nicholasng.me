@@ -179,11 +179,10 @@
     filter: drop-shadow(0 0 6px var(--color-primary));
   }
 
-  /* ── 🚀 SUPER GIGGLES MODE: Glow ring around EVERYTHING on hover ── */
+  /* ── 🚀 SUPER GIGGLES MODE: Glow ring around interactive elements on hover & keyboard focus ── */
   a:not(#mobile-menu a),
   button,
   .bento-card,
-  img,
   input,
   header,
   span.font-label-caps {
@@ -191,10 +190,13 @@
   }
 
   a:not(#mobile-menu a):hover::after,
+  a:not(#mobile-menu a):focus-visible::after,
   button:hover::after,
+  button:focus-visible::after,
   .bento-card:hover::after,
-  img:hover::after,
+  .bento-card:focus-within::after,
   input:hover::after,
+  input:focus-visible::after,
   span.font-label-caps:hover::after {
     content: '';
     position: absolute;
