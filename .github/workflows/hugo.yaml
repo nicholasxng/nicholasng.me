@@ -60,7 +60,26 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Verify analytics tag
+        run: |
+          set -euo pipefail
+          if grep -qE 'GTM-000000|G-XXXXXXXX|UA-000000' public/index.html; then
+            echo "::error::Placeholder analytics ID found in the built site"
+            exit 1
+          fi
+          if ! grep -qE 'googletagmanager\.com/gtag/js\?id=G-[A-Z0-9]+' public/index.html; then
+            echo "::error::Google Analytics gtag.js is missing from the built site"
+            exit 1
+          fi
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npm test
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

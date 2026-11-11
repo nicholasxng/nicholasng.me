@@ -35,7 +35,7 @@ test.describe('Portfolio Homepage', () => {
 test.describe('Experience Detail Pages', () => {
   test('should load Apple experience page', async ({ page }) => {
     await page.goto('/experience/apple');
-    await expect(page.locator('h3:first-of-type')).toContainText(/Revolutionizing Data Management/i);
+    await expect(page.locator('.experience-content h3').first()).toContainText(/Revolutionizing Data Management/i);
     await expect(page.locator('aside')).toBeVisible();
   });
 

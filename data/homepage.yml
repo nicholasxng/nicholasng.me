@@ -1,3 +1,7 @@
+head:
+  title: "Nicholas Ng | Technical Program Manager"
+  description: "Technical Program Manager focused on people, product, and process — building and scaling technical operations."
+
 # showcase
 showcase:
   enable: true
