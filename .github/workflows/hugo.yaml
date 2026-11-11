@@ -49,6 +49,14 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npm test
+
+      # Build last, so nothing (e.g. the test web server) can pollute the
+      # artifact that gets deployed.
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -59,6 +67,7 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --cleanDestinationDir \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Verify analytics tag
@@ -72,12 +81,6 @@ jobs:
             echo "::error::Google Analytics gtag.js is missing from the built site"
             exit 1
           fi
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      - name: Run Playwright tests
-        run: npm test
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

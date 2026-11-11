@@ -36,7 +36,8 @@ module.exports = defineConfig({
   ],
 
   webServer: {
-    command: 'hugo server',
+    // Keep test runs from overwriting the production build in ./public
+    command: 'hugo server --renderToMemory',
     url: 'http://localhost:1313',
     reuseExistingServer: !process.env.CI,
   },
